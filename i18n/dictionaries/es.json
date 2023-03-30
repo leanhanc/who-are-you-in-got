@@ -1,0 +1,12 @@
+{
+	"head": {
+		"title": "¿Quién sos en Game of Thrones?"
+	},
+	"server-component": {
+		"welcome": "Bienvenido!"
+	},
+	"counter": {
+		"increment": "Incrementar",
+		"decrement": "Decrementar"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"head": {
+		"title": "Which got character are you?"
+	},
+	"server-component": {
+		"welcome": "Welcome"
+	},
+	"counter": {
+		"increment": "Increment",
+		"decrement": "Decrement"
+	}
+}
