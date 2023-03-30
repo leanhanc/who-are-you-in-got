@@ -14,10 +14,7 @@ export default async function Head({
 	return (
 		<>
 			<title>{dictionary["head"]["title"]}</title>
-			<meta
-				name="description"
-				content="How to do i18n in Next.js 13 within app directory"
-			/>
+			<meta name="description" content={dictionary["head"]["description"]} />
 			<link rel="icon" href="/favicon.ico" />
 		</>
 	)

@@ -1,6 +1,7 @@
 {
 	"head": {
-		"title": "¿Quién sos en Game of Thrones?"
+		"title": "¿Quién sos en Game of Thrones?",
+		"description": "Descubre qué personaje de Game of Thrones sos respondiendo preguntas sobre tu personalidad y filosofía."
 	},
 	"server-component": {
 		"welcome": "Bienvenido!"

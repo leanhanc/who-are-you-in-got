@@ -1,9 +1,10 @@
 {
 	"head": {
-		"title": "Which got character are you?"
+		"title": "Which got character are you?",
+		"description": "Discover which Game of Thrones character you are by answering questions about your personality and personal philosophy."
 	},
 	"server-component": {
-		"welcome": "Welcome"
+		"welcome": "Welcome!"
 	},
 	"counter": {
 		"increment": "Increment",
