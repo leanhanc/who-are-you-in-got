@@ -1,0 +1,123 @@
+.ornaments {
+	display: flex;
+}
+
+.ornament {
+	--ornament-width: 48px;
+	--animation-delay: 1s;
+	--animation-duration: 1s;
+	--animation-function: ease;
+	--animation-fill-mode: forwards;
+	position: absolute;
+}
+
+@keyframes animateTopLeft {
+	0% {
+		transform: rotate(0deg);
+		left: 47%;
+		top: 47%;
+	}
+	80% {
+		transform: rotate(-45deg);
+		left: 47%;
+		top: 47%;
+	}
+	100% {
+		top: 0;
+		left: 0;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes animateTopRight {
+	0% {
+		transform: rotate(0deg);
+		left: 53%;
+		top: 47%;
+	}
+	80% {
+		transform: rotate(45deg);
+		left: 53%;
+		top: 47%;
+	}
+	100% {
+		top: 0;
+		left: calc(100% - var(--ornament-width));
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes animateBottomLeft {
+	0% {
+		left: 47%;
+		top: 53%;
+	}
+	80% {
+		transform: rotate(225deg);
+		left: 47%;
+		top: 53%;
+	}
+	100% {
+		left: 0;
+		top: calc(100% - var(--ornament-width));
+		transform: rotate(225deg);
+	}
+}
+@keyframes animateBottomRight {
+	0% {
+		left: 53%;
+		top: 53%;
+	}
+	80% {
+		transform: rotate(132deg);
+		left: 53%;
+		top: 53%;
+	}
+	100% {
+		transform: rotate(132deg);
+		top: calc(100% - var(--ornament-width));
+		left: calc(100% - var(--ornament-width));
+	}
+}
+
+.top-left {
+	animation: animateTopLeft;
+	animation-timing-function: var(--animation-function);
+	animation-delay: var(--animation-delay);
+	animation-duration: var(--animation-duration);
+	animation-fill-mode: var(--animation-fill-mode);
+	left: 47%;
+	top: 47%;
+}
+
+.top-right {
+	animation: animateTopRight;
+	animation-timing-function: var(--animation-function);
+	animation-delay: var(--animation-delay);
+	animation-duration: var(--animation-duration);
+	animation-fill-mode: var(--animation-fill-mode);
+	left: 53%;
+	top: 47%;
+}
+
+.bottom-left {
+	animation: animateBottomLeft;
+	animation-timing-function: var(--animation-function);
+	animation-delay: var(--animation-delay);
+	animation-duration: var(--animation-duration);
+	animation-fill-mode: var(--animation-fill-mode);
+	transform: rotate(180deg);
+	left: 47%;
+	top: 53%;
+}
+
+.bottom-right {
+	animation: animateBottomRight;
+	animation-timing-function: var(--animation-function);
+	animation-delay: var(--animation-delay);
+	animation-duration: var(--animation-duration);
+	animation-fill-mode: var(--animation-fill-mode);
+	transform: rotate(180deg);
+	left: 53%;
+	top: 53%;
+}
