@@ -1,14 +1,12 @@
-import NextImage from "next/image";
-
 // Components
+import Home from "@/app/[lang]/components/views/Home";
 import LocaleSwitcher from "./components/locale-switcher";
-
-// Config
-import { Locale } from "@/i18n/i18n-config";
 
 // Utils
 import { getDictionary } from "@/i18n/get-dictionary";
-import Home from "@/app/[lang]/components/views/Home";
+
+// Types
+import { Locale } from "@/@types/i18n";
 
 export default async function IndexPage({
 	params: { lang },

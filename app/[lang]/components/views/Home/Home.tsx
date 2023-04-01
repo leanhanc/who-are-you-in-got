@@ -2,21 +2,21 @@
 import Header from "@/app/[lang]/components/views/Home/components/Header";
 import Ornaments from "@/app/[lang]/components/views/Home/components/Ornaments";
 
-// Utils
-import { getDictionary } from "@/i18n/get-dictionary";
+// Types
+import { Dictionary } from "@/@types/i18n";
 
 // Styles
 import styles from "./Home.module.css";
 
 interface HomeProps {
-	dictionary: Awaited<ReturnType<typeof getDictionary>>;
+	dictionary: Dictionary;
 }
 
 export default function Home({ dictionary }: HomeProps) {
 	return (
 		<section className={styles.home}>
 			<Ornaments />
-			<Header />
+			<Header dictionary={dictionary} />
 		</section>
 	);
 }

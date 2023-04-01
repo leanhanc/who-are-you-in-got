@@ -3,6 +3,10 @@
 		"title": "¿Quién sos en Game of Thrones?",
 		"description": "Descubre qué personaje de Game of Thrones sos respondiendo preguntas sobre tu personalidad y filosofía."
 	},
+	"header": {
+		"whoAreYou": "Quién sos en",
+		"takeTheTest": "Hacé el test y enterate"
+	},
 	"server-component": {
 		"welcome": "Bienvenido!"
 	},

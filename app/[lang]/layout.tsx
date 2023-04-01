@@ -1,9 +1,27 @@
+import localFont from "next/font/local";
+import classNames from "classnames";
+
 // Config
 import { i18n } from "../../i18n/i18n-config";
 
 // Styles
 import "@/app/styles/reset.css";
 import "@/app/styles/global.css";
+
+// Fonts
+import { Cinzel } from "next/font/google";
+
+const cinzel = Cinzel({
+	subsets: ["latin"],
+	variable: "--cinzel-regular",
+	display: "swap",
+});
+
+const gotRegular = localFont({
+	src: "../../public/fonts/GameOfThronesRegular.ttf",
+	variable: "--got-regular",
+	display: "swap",
+});
 
 export async function generateStaticParams() {
 	return i18n.locales.map((locale) => ({ lang: locale }));
@@ -17,7 +35,10 @@ export default function Root({
 	params: { lang: string };
 }) {
 	return (
-		<html lang={params.lang}>
+		<html
+			lang={params.lang}
+			className={classNames([cinzel.variable, gotRegular.variable])}
+		>
 			<body>{children}</body>
 		</html>
 	);

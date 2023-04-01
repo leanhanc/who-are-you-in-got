@@ -1,24 +1,71 @@
-@keyframes animateHeader {
+@keyframes fadeIn {
 	from {
 		opacity: 0;
 		transform: scale(0);
 	}
 
 	to {
-		opacity: 0;
+		opacity: 1;
 		transform: scale(1);
 	}
 }
 
-.header {
-	animation: animateHeader;
+.header-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-title {
+	animation: fadeIn;
 	animation-duration: 1s;
-	animation-delay: 1.5s;
+	animation-delay: 1.9s;
 	animation-fill-mode: forwards;
 
 	display: flex;
 	flex-direction: column;
-
+	text-align: center;
+	text-transform: uppercase;
 	opacity: 0;
 	transform: scale(0);
+}
+
+.first-line {
+	color: var(--primary-color);
+	font-family: var(--cinzel-regular);
+	font-size: 1.2rem;
+	letter-spacing: 0.3rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.second-line {
+	font-family: var(--got-regular);
+	margin-top: 2rem;
+	font-size: 2.2rem;
+}
+
+.find-out {
+	color: var(--primary-dark-color);
+	font-family: var(--cinzel-regular);
+	margin-top: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	animation: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+	.first-line {
+		font-size: 2.5rem;
+	}
+	.second-line {
+		font-size: 3.8rem;
+	}
+	.find-out {
+		font-size: 1.5rem;
+	}
 }

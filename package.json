@@ -1,24 +1,25 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@formatjs/intl-localematcher": "0.2.32",
-    "classnames": "^2.3.2",
-    "negotiator": "0.6.3",
-    "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "server-only": "0.0.1"
-  },
-  "devDependencies": {
-    "@types/negotiator": "0.6.1",
-    "@types/node": "^18.11.5",
-    "@types/react": "^18.0.23",
-    "@types/react-dom": "^18.0.7",
-    "typescript": "^4.8.4"
-  }
+	"name": "who-are-you-in-got",
+	"private": true,
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@formatjs/intl-localematcher": "0.2.32",
+		"classnames": "^2.3.2",
+		"negotiator": "0.6.3",
+		"next": "latest",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"server-only": "0.0.1"
+	},
+	"devDependencies": {
+		"@types/negotiator": "0.6.1",
+		"@types/node": "^18.11.5",
+		"@types/react": "^18.0.23",
+		"@types/react-dom": "^18.0.7",
+		"typescript": "^4.8.4"
+	}
 }

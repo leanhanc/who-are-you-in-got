@@ -3,6 +3,10 @@
 		"title": "Which got character are you?",
 		"description": "Discover which Game of Thrones character you are by answering questions about your personality and personal philosophy."
 	},
+	"header": {
+		"whoAreYou": "Who are you in",
+		"takeTheTest": "Take the test and find out"
+	},
 	"server-component": {
 		"welcome": "Welcome!"
 	},
