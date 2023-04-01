@@ -1,4 +1,5 @@
 // Components
+import Header from "@/app/[lang]/components/views/Home/components/Header";
 import Ornaments from "@/app/[lang]/components/views/Home/components/Ornaments";
 
 // Utils
@@ -15,6 +16,7 @@ export default function Home({ dictionary }: HomeProps) {
 	return (
 		<section className={styles.home}>
 			<Ornaments />
+			<Header />
 		</section>
 	);
 }

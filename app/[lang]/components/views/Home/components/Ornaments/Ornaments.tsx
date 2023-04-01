@@ -14,28 +14,31 @@ export default function Ornaments() {
 				src={Ornament}
 				alt=""
 				priority
-				height={48}
+				width={24}
 				className={classNames([styles.ornament, styles["top-left"]])}
 			/>
+
 			<NextImage
 				src={Ornament}
 				alt=""
 				priority
-				height={48}
+				width={24}
 				className={classNames([styles.ornament, styles["top-right"]])}
 			/>
+
 			<NextImage
 				src={Ornament}
 				alt=""
 				priority
-				height={48}
+				width={24}
 				className={classNames([styles.ornament, styles["bottom-left"]])}
 			/>
+
 			<NextImage
 				src={Ornament}
 				alt=""
 				priority
-				height={48}
+				width={24}
 				className={classNames([styles.ornament, styles["bottom-right"]])}
 			/>
 		</div>

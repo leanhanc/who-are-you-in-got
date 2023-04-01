@@ -2,122 +2,147 @@
 	display: flex;
 }
 
-.ornament {
-	--ornament-width: 48px;
-	--animation-delay: 1s;
-	--animation-duration: 1s;
-	--animation-function: ease;
-	--animation-fill-mode: forwards;
-	position: absolute;
-}
-
 @keyframes animateTopLeft {
 	0% {
-		transform: rotate(0deg);
-		left: 47%;
-		top: 47%;
+		transform: rotate(-90deg);
+		top: calc(50% - var(--ornament-width) / 2 * 4);
+		left: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 0;
 	}
 	80% {
 		transform: rotate(-45deg);
-		left: 47%;
-		top: 47%;
+		top: calc(50% - var(--ornament-width) / 2 * 4);
+		left: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 1;
 	}
 	100% {
 		top: 0;
 		left: 0;
 		transform: rotate(-45deg);
-	}
-}
-
-@keyframes animateTopRight {
-	0% {
-		transform: rotate(0deg);
-		left: 53%;
-		top: 47%;
-	}
-	80% {
-		transform: rotate(45deg);
-		left: 53%;
-		top: 47%;
-	}
-	100% {
-		top: 0;
-		left: calc(100% - var(--ornament-width));
-		transform: rotate(45deg);
+		opacity: 1;
 	}
 }
 
 @keyframes animateBottomLeft {
 	0% {
-		left: 47%;
-		top: 53%;
+		transform: rotate(-90deg);
+		bottom: calc(50% - var(--ornament-width) / 2 * 4);
+		left: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 0;
 	}
 	80% {
-		transform: rotate(225deg);
-		left: 47%;
-		top: 53%;
+		transform: rotate(-135deg);
+		bottom: calc(50% - var(--ornament-width) / 2 * 4);
+		left: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 1;
 	}
 	100% {
+		bottom: 0;
 		left: 0;
-		top: calc(100% - var(--ornament-width));
-		transform: rotate(225deg);
+		transform: rotate(-135deg);
+		opacity: 1;
 	}
 }
-@keyframes animateBottomRight {
+
+@keyframes animateTopRight {
 	0% {
-		left: 53%;
-		top: 53%;
+		transform: rotate(90deg);
+		top: calc(50% - var(--ornament-width) / 2 * 4);
+		right: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 0;
 	}
 	80% {
-		transform: rotate(132deg);
-		left: 53%;
-		top: 53%;
+		transform: rotate(45deg);
+		top: calc(50% - var(--ornament-width) / 2 * 4);
+		right: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 1;
 	}
 	100% {
-		transform: rotate(132deg);
-		top: calc(100% - var(--ornament-width));
-		left: calc(100% - var(--ornament-width));
+		top: 0;
+		right: 10px;
+		transform: rotate(45deg);
+		opacity: 1;
+	}
+}
+
+@keyframes animateBottomRight {
+	0% {
+		transform: rotate(90deg);
+		bottom: calc(50% - var(--ornament-width) / 2 * 4);
+		right: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 0;
+	}
+	80% {
+		transform: rotate(135deg);
+		bottom: calc(50% - var(--ornament-width) / 2 * 4);
+		right: calc(50% - var(--ornament-width) / 2 * 4);
+		opacity: 1;
+	}
+	100% {
+		bottom: 0;
+		right: 0;
+		transform: rotate(135deg);
+		opacity: 1;
+	}
+}
+
+.ornament {
+	--ornament-width: 32px;
+	--animation-delay: 1s;
+	--animation-duration: 1.5s;
+	--animation-fill-mode: forwards;
+	position: absolute;
+	opacity: 0;
+	height: auto;
+	width: var(--ornament-width);
+}
+
+@media screen and (min-width: 1000px) {
+	.ornament {
+		--ornament-width: 48px;
 	}
 }
 
 .top-left {
 	animation: animateTopLeft;
-	animation-timing-function: var(--animation-function);
 	animation-delay: var(--animation-delay);
 	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-function);
 	animation-fill-mode: var(--animation-fill-mode);
-	left: 47%;
-	top: 47%;
+	transform: rotate(-90deg);
+	top: calc(50% - var(--ornament-width) / 2 * 4);
+	left: calc(50% - var(--ornament-width) / 2 * 4);
 }
 
 .top-right {
 	animation: animateTopRight;
-	animation-timing-function: var(--animation-function);
 	animation-delay: var(--animation-delay);
 	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-function);
 	animation-fill-mode: var(--animation-fill-mode);
-	left: 53%;
-	top: 47%;
+	transform: rotate(90deg);
+	top: calc(50% - var(--ornament-width) / 2 * 4);
+	right: calc(50% - var(--ornament-width) / 2 * 4);
 }
 
 .bottom-left {
 	animation: animateBottomLeft;
-	animation-timing-function: var(--animation-function);
 	animation-delay: var(--animation-delay);
 	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-function);
 	animation-fill-mode: var(--animation-fill-mode);
-	transform: rotate(180deg);
-	left: 47%;
-	top: 53%;
+	transform: rotate(-90deg);
+	bottom: calc(50% - var(--ornament-width) / 2 * 4);
+	left: calc(50% - var(--ornament-width) / 2 * 4);
 }
 
 .bottom-right {
 	animation: animateBottomRight;
-	animation-timing-function: var(--animation-function);
 	animation-delay: var(--animation-delay);
 	animation-duration: var(--animation-duration);
+	animation-timing-function: var(--animation-function);
 	animation-fill-mode: var(--animation-fill-mode);
-	transform: rotate(180deg);
-	left: 53%;
-	top: 53%;
+	transform: rotate(90deg);
+	bottom: calc(50% - var(--ornament-width) / 2 * 4);
+	right: calc(50% - var(--ornament-width) / 2 * 4);
 }
