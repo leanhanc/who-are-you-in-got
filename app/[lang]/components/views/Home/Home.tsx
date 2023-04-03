@@ -8,6 +8,7 @@ import { Dictionary, Locale } from "@/@types/i18n";
 
 // Styles
 import styles from "./Home.module.css";
+import Button from "@/app/[lang]/components/shared/Button";
 
 interface HomeProps {
 	dictionary: Dictionary;
@@ -19,6 +20,14 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 		<section className={styles.home}>
 			<Ornaments />
 			<Header dictionary={dictionary} />
+			<Button
+				variant="shinny"
+				href="/game"
+				animationDelay={4}
+				margin="5rem auto"
+			>
+				COMENZAR
+			</Button>
 			<LocaleSwitcher currentLocale={currentLocale} />
 		</section>
 	);
