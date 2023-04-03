@@ -1,6 +1,5 @@
 // Components
 import Home from "@/app/[lang]/components/views/Home";
-import LocaleSwitcher from "./components/locale-switcher";
 
 // Utils
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -17,7 +16,7 @@ export default async function IndexPage({
 
 	return (
 		<main>
-			<Home dictionary={dictionary} />
+			<Home dictionary={dictionary} currentLocale={lang || "en"} />
 		</main>
 	);
 }

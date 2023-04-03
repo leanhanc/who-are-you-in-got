@@ -9,11 +9,11 @@ import "@/app/styles/reset.css";
 import "@/app/styles/global.css";
 
 // Fonts
-import { Cinzel } from "next/font/google";
+import { Cinzel, Inconsolata } from "next/font/google";
 
 const cinzel = Cinzel({
 	subsets: ["latin"],
-	variable: "--cinzel-regular",
+	variable: "--cinzel",
 	display: "swap",
 });
 
@@ -21,6 +21,11 @@ const gotRegular = localFont({
 	src: "../../public/fonts/GameOfThronesRegular.ttf",
 	variable: "--got-regular",
 	display: "swap",
+});
+
+const inconsolata = Inconsolata({
+	subsets: ["latin"],
+	variable: "--inconsolata",
 });
 
 export async function generateStaticParams() {
@@ -36,8 +41,12 @@ export default function Root({
 }) {
 	return (
 		<html
-			lang={params.lang}
-			className={classNames([cinzel.variable, gotRegular.variable])}
+			lang={params.lang || "en"}
+			className={classNames([
+				cinzel.variable,
+				gotRegular.variable,
+				inconsolata.variable,
+			])}
 		>
 			<body>{children}</body>
 		</html>

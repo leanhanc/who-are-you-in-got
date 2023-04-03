@@ -1,0 +1,41 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.menu {
+	animation: fadeIn;
+	animation-delay: 4s;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+
+	font-family: var(--inconsolata);
+	margin-top: 5rem;
+	opacity: 0;
+}
+
+.separator {
+	margin: 0 1rem;
+}
+
+.menu ul {
+	display: flex;
+}
+
+.menu li a:visited {
+	color: var(--font-color);
+}
+
+menu li a.active:visited,
+.active:active {
+	color: var(--primary-dark-color);
+}
+
+.menu li a:hover {
+	text-decoration: underline;
+}
