@@ -1,14 +1,14 @@
 // Components
-import Header from "@/app/[lang]/components/views/Home/components/Header";
-import Ornaments from "@/app/[lang]/components/views/Home/components/Ornaments";
-import LocaleSwitcher from "@/app/[lang]/components/views/Home/components/LocaleSwitcher";
+import Header from "@/app/components/views/Home/components/Header";
+import Ornaments from "@/app/components/views/Home/components/Ornaments";
+import LocaleSwitcher from "@/app/components/views/Home/components/LocaleSwitcher";
 
 // Types
 import { Dictionary, Locale } from "@/@types/i18n";
 
 // Styles
 import styles from "./Home.module.css";
-import Button from "@/app/[lang]/components/shared/Button";
+import Button from "@/app/components/shared/Button";
 
 interface HomeProps {
 	dictionary: Dictionary;

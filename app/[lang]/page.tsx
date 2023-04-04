@@ -1,5 +1,5 @@
 // Components
-import Home from "@/app/[lang]/components/views/Home";
+import Home from "@/app/components/views/Home";
 
 // Utils
 import { getDictionary } from "@/i18n/get-dictionary";
