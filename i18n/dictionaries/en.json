@@ -5,7 +5,8 @@
 	},
 	"header": {
 		"whoAreYou": "Who are you in",
-		"takeTheTest": "Take the test and find out"
+		"takeTheTest": "Take the test and find out",
+		"ctaText": "start"
 	},
 	"server-component": {
 		"welcome": "Welcome!"

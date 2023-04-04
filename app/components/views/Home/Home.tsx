@@ -2,13 +2,13 @@
 import Header from "@/app/components/views/Home/components/Header";
 import Ornaments from "@/app/components/views/Home/components/Ornaments";
 import LocaleSwitcher from "@/app/components/views/Home/components/LocaleSwitcher";
+import Button from "@/app/components/shared/Button";
 
 // Types
 import { Dictionary, Locale } from "@/@types/i18n";
 
 // Styles
 import styles from "./Home.module.css";
-import Button from "@/app/components/shared/Button";
 
 interface HomeProps {
 	dictionary: Dictionary;
@@ -26,7 +26,7 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 				animationDelay={4}
 				margin="5rem auto"
 			>
-				COMENZAR
+				{dictionary.header.ctaText}
 			</Button>
 			<LocaleSwitcher currentLocale={currentLocale} />
 		</section>
