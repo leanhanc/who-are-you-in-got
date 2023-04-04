@@ -1,6 +1,9 @@
 // Components
 import Header from "@/app/components/shared/Header";
-import Button from "@/app/components/shared/Button";
+import QuestionsAndAnswers from "@/app/components/views/Game/components/QuestionsAndAnswers";
+
+// Context Providers
+import { GameProvider } from "@/app/components/views/Game/Game.context";
 
 // Types
 import { Dictionary } from "@/@types/i18n";
@@ -16,6 +19,12 @@ export default function Game({ dictionary }: GameProps) {
 	return (
 		<section className={styles.game}>
 			<Header dictionary={dictionary} withAnimation={false} />
+			<GameProvider>
+				<QuestionsAndAnswers
+					questions={dictionary.questions}
+					answers={dictionary.answers}
+				/>
+			</GameProvider>
 		</section>
 	);
 }

@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.question {
+	margin-top: 3rem;
+	color: var(--primary-dark-color);
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: var(--cinzel);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.answer {
+	margin-top: 3rem;
+	font-family: var(--inconsolata);
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--font-accent-color);
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		max-width: 66%;
+	}
+
+	.question {
+		font-size: 1.5rem;
+		line-height: 2;
+	}
+
+	.answer {
+		font-size: 1.2rem;
+	}
+}

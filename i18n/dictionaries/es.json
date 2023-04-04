@@ -8,11 +8,38 @@
 		"takeTheTest": "Hacé el test y enterate",
 		"ctaText": "comenzar"
 	},
-	"server-component": {
-		"welcome": "Bienvenido!"
-	},
-	"counter": {
-		"increment": "Incrementar",
-		"decrement": "Decrementar"
-	}
+	"questions": [
+		"Si alguien te dice que tu pareja te es infiel, ¿qué harías?",
+		"Si pudieses viajar a los tiempos de la declaración de independencia de tu país, ¿qué harías?",
+		"¿Qué opinión te merece la astrología?",
+		"¿Que cósas te hacen feliz? ¿Cuáles son tus metas?"
+	],
+	"answers": [
+		[
+			{
+				"author": "jon",
+				"text": "Desestimaría la acusación porque confío en la persona que elegí."
+			},
+			{
+				"author": "tyrion",
+				"text": "Pensaría que puede ser cierto y que probablemente yo tenga algo de culpa, quizás signfique que no pude darle lo que quiere o necesita."
+			},
+			{
+				"author": "daenarys",
+				"text": "Se lo planteo a mi pareja cara a cara, le pediría que me mire a los ojos y me diga la verdad."
+			},
+			{
+				"author": "cersei",
+				"text": "Observaría cuidadosamente cada paso que dé. Buscaría pruebas y, de encontrarlas, vería cómo se la devuelvo. Nadie se mete conmigo."
+			},
+			{
+				"author": "petyr",
+				"text": "Puede que sea cierto o no, pero primero analizaría quién me lo dice: puede ser parte interesada en que mi pareja quede libre de compromisos."
+			},
+			{
+				"author": "sansa",
+				"text": "No lo sé, pero si esta persona fuera el amor de mi vida, quizás le podría perdonar una infidelidad."
+			}
+		]
+	]
 }

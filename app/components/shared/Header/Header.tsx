@@ -6,7 +6,7 @@ import { Dictionary } from "@/@types/i18n";
 import classNames from "classnames";
 
 interface HeaderProps {
-	withAnimation: boolean;
+	withAnimation?: boolean;
 	dictionary: Dictionary;
 }
 
