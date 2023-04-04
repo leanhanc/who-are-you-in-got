@@ -5,3 +5,18 @@
 	align-items: center;
 	flex-direction: column;
 }
+
+.find-out {
+	color: var(--primary-dark-color);
+	font-family: var(--cinzel);
+	margin-top: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	animation: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	font-size: 1rem;
+	letter-spacing: 0.5rem;
+}

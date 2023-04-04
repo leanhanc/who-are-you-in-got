@@ -1,5 +1,5 @@
 // Components
-import Header from "@/app/components/views/Home/components/Header";
+import Header from "@/app/components/shared/Header";
 import Ornaments from "@/app/components/views/Home/components/Ornaments";
 import LocaleSwitcher from "@/app/components/views/Home/components/LocaleSwitcher";
 import Button from "@/app/components/shared/Button";
@@ -20,6 +20,7 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 		<section className={styles.home}>
 			<Ornaments />
 			<Header dictionary={dictionary} />
+			<p className={styles["find-out"]}>{dictionary.header.takeTheTest}</p>
 			<Button
 				variant="shinny"
 				href="/game"
