@@ -20,12 +20,13 @@ export default function QuestionsAndAnswers({
 }: QuestionsAndAnswersProps) {
 	const { game } = useGameContext();
 
+	const question = questions[game.currentQuestion];
+	const answer = answers[game.currentQuestion][game.currentAnswer].text;
+
 	return (
 		<article className={styles.container}>
-			<p className={styles.question}>{questions[game.currentQuestion]}</p>
-			<p className={styles.answer}>
-				{answers[game.currentQuestion][game.currentAnswer].text}
-			</p>
+			<p className={styles.question}>{question}</p>
+			<p className={styles.answer}>{answer}</p>
 		</article>
 	);
 }
