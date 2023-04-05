@@ -6,7 +6,30 @@
 	flex-direction: column;
 }
 
+.home a {
+	font-weight: 700;
+	font-family: var(--inconsolata);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+@keyframes fadeInWithZoom {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
 .find-out {
+	animation: fadeInWithZoom;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
 	color: var(--primary-dark-color);
 	font-family: var(--cinzel);
 	margin-top: 3rem;

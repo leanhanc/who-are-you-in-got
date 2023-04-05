@@ -1,9 +1,10 @@
+import classNames from "classnames";
+
 // Styles
 import styles from "./Header.module.css";
 
 // Types
 import { Dictionary } from "@/@types/i18n";
-import classNames from "classnames";
 
 interface HeaderProps {
 	withAnimation?: boolean;

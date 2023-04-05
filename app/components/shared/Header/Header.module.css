@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes fadeInWithZoom {
 	from {
 		opacity: 0;
 		transform: scale(0);

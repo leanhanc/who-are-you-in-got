@@ -42,7 +42,7 @@
 	background-color: var(--primary-color);
 	letter-spacing: 0.25rem;
 	position: relative;
-	padding: 1rem 3rem;
+	padding: 1rem 5rem;
 }
 
 .shinny::before {
