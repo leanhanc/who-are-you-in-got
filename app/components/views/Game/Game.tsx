@@ -25,7 +25,10 @@ export default function Game({ dictionary }: GameProps) {
 					questions={dictionary.questions}
 					answers={dictionary.answers}
 				/>
-				<ResponseButtons possibleResponses={dictionary.possibleResponses} />
+				<ResponseButtons
+					possibleResponses={dictionary.possibleResponses}
+					answers={dictionary.answers}
+				/>
 			</GameProvider>
 		</section>
 	);

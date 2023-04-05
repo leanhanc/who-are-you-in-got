@@ -19,7 +19,6 @@ import gameReducer, {
 when consuming the context. Source:
 	https://kentcdodds.com/blog/how-to-use-react-context-effectively#typescript
 */
-
 const GameContext = createContext<
 	| {
 			game: GameState;

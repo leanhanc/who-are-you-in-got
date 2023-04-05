@@ -28,20 +28,58 @@ export const initialGameState: GameState = {
 	status: "IN_PROGRESS",
 };
 
+export type Character = keyof typeof initialGameState.characterScore;
 export type GameAction = {
-	type: "increment-score" | "decrement-score" | "finish" | "reset";
+	type: "answer" | "advance" | "reset";
 	payload?: {
-		character: keyof typeof initialGameState.characterScore;
-		response?:
-			| "agreed"
-			| "strongly-agreed"
-			| "disagreed"
-			| "strongly-disagreed";
+		character?: Character;
+		scoreChange?: 1 | 3 | -1 | -3;
 	};
 };
 
 const gameReducer: Reducer<GameState, GameAction> = function (state, action) {
 	switch (action.type) {
+		case "answer":
+			if (!action.payload?.character || !action.payload.scoreChange) {
+				return state;
+			}
+			return {
+				...state,
+				characterScore: {
+					...state.characterScore,
+					[action.payload?.character]:
+						state.characterScore[action.payload?.character] +
+						action.payload?.scoreChange,
+				},
+			};
+		case "advance": {
+			if (
+				state.currentQuestion === 3 &&
+				state.currentAnswer ===
+					Object.keys(initialGameState.characterScore).length
+			) {
+				// Handle all answers given for all questions
+				return {
+					...state,
+					status: "FINISHED",
+				};
+			}
+			if (
+				state.currentAnswer ===
+				Object.keys(initialGameState.characterScore).length
+			)
+				// Handle all anwsers given for the current question, show next question
+				return {
+					...state,
+					currentQuestion: state.currentQuestion + 1,
+					currentAnswer: 0,
+				};
+			// Handle answer given, show next answer for the current question
+			return {
+				...state,
+				currentAnswer: state.currentAnswer + 1,
+			};
+		}
 		default:
 			return state;
 	}

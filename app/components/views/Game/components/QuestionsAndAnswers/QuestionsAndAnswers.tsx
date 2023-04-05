@@ -20,6 +20,8 @@ export default function QuestionsAndAnswers({
 }: QuestionsAndAnswersProps) {
 	const { game } = useGameContext();
 
+	console.log({ game });
+
 	return (
 		<article className={styles.container}>
 			<p className={styles.question}>{questions[game.currentQuestion]}</p>
