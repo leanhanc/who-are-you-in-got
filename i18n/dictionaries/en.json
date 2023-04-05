@@ -25,7 +25,7 @@
 				"text": "I might think that it could be true and it probably would partly be my fault because that could mean I wouldn't have given my partner what he or she wanted or needed."
 			},
 			{
-				"author": "daenarys",
+				"author": "daenerys",
 				"text": "I would confront my partner face to face and ask them to look me in the eyes and tell me the truth."
 			},
 			{
@@ -39,6 +39,84 @@
 			{
 				"author": "sansa",
 				"text": "I don't know. But if this person was the love of my life, I might be able to forgive an infidelity."
+			}
+		],
+		[
+			{
+				"author": "jon",
+				"text": "I would join the military forces fighting for the independence."
+			},
+			{
+				"author": "sansa",
+				"text": "It's hard for me to say. I'm not all that interested in politics."
+			},
+			{
+				"author": "daenerys",
+				"text": "I see myself taking a political initiative to free slaves and help them join the rebel forces. I am a natural leader."
+			},
+			{
+				"author": "petyr",
+				"text": "I would publicly support the loyalists just in case they win, but secretly provide weapons to the independentists."
+			},
+			{
+				"author": "cersei",
+				"text": "I wouldn't really care as long as my family comes out of the conflict well-positioned."
+			},
+			{
+				"author": "tyrion",
+				"text": "Given that my strongest weapon is my words and not my physical strength, I would advise on the risks associated with declaring independence, consider all possible strategies, and recommend the most appropriate one to achieve it."
+			}
+		],
+		[
+			{
+				"author": "daenerys",
+				"text": "As strange as it may seem, horoscopes are often surprisingly accurate."
+			},
+			{
+				"author": "tyrion",
+				"text": "I don't believe in astrology or horoscopes as I consider them to be pseudo-science nonsense."
+			},
+			{
+				"author": "petyr",
+				"text": "I don't really care for horoscopes because I don't need to ask people about their zodiac sign to read them as an open book."
+			},
+			{
+				"author": "jon",
+				"text": "I may occasionally check horoscopes out of curiosity, but I don't take them too seriously as I believe that I control my own destiny through my own choices and actions."
+			},
+			{
+				"author": "cersei",
+				"text": "It only serves as an illusion for weak people. It's a placebo."
+			},
+			{
+				"author": "sansa",
+				"text": "I find horoscopes interesting and sometimes very entertaining, but I believe that ultimately our fate is determined by a higher power."
+			}
+		],
+		[
+			{
+				"author": "sansa",
+				"text": "To form a beautiful and loving family."
+			},
+			{
+				"author": "cersei",
+				"text": "Witnessing those who did me wrong suffer."
+			},
+			{
+				"author": "jon",
+				"text": "To be up to the expectations of my loved ones."
+			},
+			{
+				"author": "daenerys",
+				"text": "To aid the oppressed and fight for social justice."
+			},
+			{
+				"author": "tyrion",
+				"text": "I don't ask for too much. I'm happy as long as I can indulge in the pleasures of life, like a good drink."
+			},
+			{
+				"author": "petyr",
+				"text": "I am motivated by a desire for success, whether that means accumulating wealth, gaining power, or achieving fame."
 			}
 		]
 	],

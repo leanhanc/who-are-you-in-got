@@ -25,7 +25,7 @@
 				"text": "Pensaría que puede ser cierto y que probablemente yo tenga algo de culpa, quizás signfique que no pude darle lo que quiere o necesita."
 			},
 			{
-				"author": "daenarys",
+				"author": "daenerys",
 				"text": "Se lo planteo a mi pareja cara a cara, le pediría que me mire a los ojos y me diga la verdad."
 			},
 			{
@@ -39,6 +39,84 @@
 			{
 				"author": "sansa",
 				"text": "No lo sé, pero si esta persona fuera el amor de mi vida, quizás le podría perdonar una infidelidad."
+			}
+		],
+		[
+			{
+				"author": "jon",
+				"text": "Me uniría al ejército de San Martín o Bolívar."
+			},
+			{
+				"author": "sansa",
+				"text": "Me cuesta imaginarlo. Los temas políticos no me interesan mucho."
+			},
+			{
+				"author": "daenerys",
+				"text": "Me veo llevando a cabo una iniciativa política para liberar esclavos y llevarlos a la batalla contra los realistas. Tengo facilidad para el liderazgo."
+			},
+			{
+				"author": "petyr",
+				"text": "Me cubriría apoyando a los a los realistas por si ganan, pero secretamente le vendería armas a los independentistas."
+			},
+			{
+				"author": "cersei",
+				"text": "Mientras mi familia salga bien parada del conflicto, no creo que me importe demasiado qué lado gane."
+			},
+			{
+				"author": "tyrion",
+				"text": "Dado que mi mejor arma no es la destreza física sino la palabra, alertaría los riesgos que conlleva declarar una independencia, sopesaría todas las estrategias y recomendaría la más conveniente para conseguirla."
+			}
+		],
+		[
+			{
+				"author": "daenerys",
+				"text": "Aunque parezca loco, los horóscopos aciertan bastante."
+			},
+			{
+				"author": "tyrion",
+				"text": "Es basura pseudo-científica."
+			},
+			{
+				"author": "petyr",
+				"text": "Me tiene sin cuidado la astrología y los horóscopos. No necesito preguntarle de qué signo son a las personas porque tengo facilidad para leerlas y sacarles rápido la ficha."
+			},
+			{
+				"author": "jon",
+				"text": "Quizás le dé una ojeada cuando leo el diario pero no le doy mucha bolilla, pues forjo mi destino a través de mis propios actos."
+			},
+			{
+				"author": "cersei",
+				"text": "Sólo sirve para darle una ilusión a la gente débil, es un placebo."
+			},
+			{
+				"author": "sansa",
+				"text": "El horóscopo es una de mis partes favoritas del diario. Aún así, en última instancia, nuestro destino está en manos de la voluntad de Dios."
+			}
+		],
+		[
+			{
+				"author": "sansa",
+				"text": "Formar una hermosa familia."
+			},
+			{
+				"author": "cersei",
+				"text": "Ver sufrir a los que me hicieron daño."
+			},
+			{
+				"author": "jon",
+				"text": "Estar a la altura de que lo que mis seres queridos esperan de mí."
+			},
+			{
+				"author": "daenerys",
+				"text": "Luchar por la igualdad, ayudar a los más vulnerables."
+			},
+			{
+				"author": "tyrion",
+				"text": "No pido demasiado. Soy feliz mientras pueda entregarme a los placeres de la vida, como una buena bebida."
+			},
+			{
+				"author": "petyr",
+				"text": "Me impulsa el deseo de éxito, ya sea acumular riqueza, obtener poder o lograr fama."
 			}
 		]
 	],
