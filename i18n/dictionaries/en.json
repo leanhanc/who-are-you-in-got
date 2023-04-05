@@ -41,5 +41,11 @@
 				"text": "I don't know. But if this person was the love of my life, I might be able to forgive an infidelity."
 			}
 		]
-	]
+	],
+	"possibleResponses": {
+		"agree": "Agree",
+		"stronglyAgree": "Strongly Agree",
+		"disagree": "Disagree",
+		"stronglyDisagree": "Strongly Disagree"
+	}
 }

@@ -1,6 +1,7 @@
 // Components
 import Header from "@/app/components/shared/Header";
 import QuestionsAndAnswers from "@/app/components/views/Game/components/QuestionsAndAnswers";
+import ResponseButtons from "@/app/components/views/Game/components/ResponseButtons";
 
 // Context Providers
 import { GameProvider } from "@/app/components/views/Game/Game.context";
@@ -24,6 +25,7 @@ export default function Game({ dictionary }: GameProps) {
 					questions={dictionary.questions}
 					answers={dictionary.answers}
 				/>
+				<ResponseButtons possibleResponses={dictionary.possibleResponses} />
 			</GameProvider>
 		</section>
 	);

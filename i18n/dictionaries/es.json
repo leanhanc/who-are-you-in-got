@@ -41,5 +41,11 @@
 				"text": "No lo sé, pero si esta persona fuera el amor de mi vida, quizás le podría perdonar una infidelidad."
 			}
 		]
-	]
+	],
+	"possibleResponses": {
+		"agree": "De acuerdo",
+		"stronglyAgree": "Muy de acuerdo",
+		"disagree": "Desacuerdo",
+		"stronglyDisagree": "Muy en desacuerdo"
+	}
 }

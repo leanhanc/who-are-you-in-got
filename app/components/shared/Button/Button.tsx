@@ -42,6 +42,18 @@ export default function Button({
 		);
 	}
 
+	if (variant === "outlined") {
+		return (
+			<button
+				className={classNames([styles.button, styles.outlined])}
+				style={dynamicStyles}
+				onClick={onClick}
+			>
+				{children}
+			</button>
+		);
+	}
+
 	return (
 		<button
 			className={classNames(["button"])}
