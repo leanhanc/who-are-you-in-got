@@ -38,7 +38,7 @@ export default function ResponseButtons({
 		dispatch({
 			type: "answer",
 			payload: {
-				scoreChange: 1,
+				scoreChange: 3,
 				character: answerAuthorCharacter,
 			},
 		});
@@ -50,7 +50,7 @@ export default function ResponseButtons({
 		dispatch({
 			type: "answer",
 			payload: {
-				scoreChange: 3,
+				scoreChange: 1,
 				character: answerAuthorCharacter,
 			},
 		});
