@@ -1,3 +1,27 @@
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-50%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(50%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -22,6 +46,22 @@
 	font-weight: 500;
 	font-size: 14px;
 	color: var(--font-accent-color);
+}
+
+.question-enter {
+	animation: slideInRight;
+	animation-duration: 500ms;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+.answer-enter {
+	animation: slideInLeft;
+	animation-duration: 500ms;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
 }
 
 @media screen and (min-width: 1000px) {

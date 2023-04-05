@@ -25,7 +25,7 @@ export default function ResponseButtons({
 	// Context
 	const { game, dispatch } = useGameContext();
 
-	// Derived state
+	// Derived
 	const answerAuthorCharacter = answers[game.currentQuestion][
 		game.currentAnswer
 	].author as Character;
