@@ -56,7 +56,7 @@ const gameReducer: Reducer<GameState, GameAction> = function (state, action) {
 			if (
 				state.currentQuestion === 3 &&
 				state.currentAnswer ===
-					Object.keys(initialGameState.characterScore).length
+					Object.keys(initialGameState.characterScore).length - 1
 			) {
 				// Handle all answers given for all questions
 				return {

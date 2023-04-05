@@ -20,6 +20,10 @@ export default function QuestionsAndAnswers({
 }: QuestionsAndAnswersProps) {
 	const { game } = useGameContext();
 
+	if (game.status === "FINISHED") {
+		return <p>juego terminado!</p>;
+	}
+
 	const question = questions[game.currentQuestion];
 	const answer = answers[game.currentQuestion][game.currentAnswer].text;
 

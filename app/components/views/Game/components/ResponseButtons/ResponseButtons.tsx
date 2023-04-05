@@ -5,16 +5,13 @@ import Button from "@/app/components/shared/Button";
 
 // Types
 import { Dictionary } from "@/@types/i18n";
+import { Character } from "@/app/components/views/Game/Game.reducer";
+
+// Context
+import useGameContext from "@/app/components/views/Game/Game.context";
 
 // Styles
 import styles from "./ResponseButtons.module.css";
-
-// Contexr
-import useGameContext from "@/app/components/views/Game/Game.context";
-import {
-	Character,
-	GameAction,
-} from "@/app/components/views/Game/Game.reducer";
 
 interface ResponseButtonsProps {
 	possibleResponses: Dictionary["possibleResponses"];
@@ -84,6 +81,10 @@ export default function ResponseButtons({
 			type: "advance",
 		});
 	};
+
+	if (game.status === "FINISHED") {
+		return null;
+	}
 
 	return (
 		<menu className={styles.buttons}>
