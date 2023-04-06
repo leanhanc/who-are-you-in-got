@@ -41,6 +41,7 @@
 }
 
 .answer {
+	min-height: 64px;
 	margin-top: 3rem;
 	font-family: var(--inconsolata);
 	font-weight: 500;
@@ -76,5 +77,6 @@
 
 	.answer {
 		font-size: 1.2rem;
+		min-height: 132px;
 	}
 }
