@@ -2,6 +2,7 @@
 import Header from "@/app/components/shared/Header";
 import QuestionsAndAnswers from "@/app/components/views/Game/components/QuestionsAndAnswers";
 import ResponseButtons from "@/app/components/views/Game/components/ResponseButtons";
+import ProgressBar from "@/app/components/views/Game/components/ProgressBar";
 
 // Context Providers
 import { GameProvider } from "@/app/components/views/Game/Game.context";
@@ -29,6 +30,7 @@ export default function Game({ dictionary }: GameProps) {
 					possibleResponses={dictionary.possibleResponses}
 					answers={dictionary.answers}
 				/>
+				<ProgressBar />
 			</GameProvider>
 		</section>
 	);

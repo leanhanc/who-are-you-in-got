@@ -1,0 +1,55 @@
+.bar[value] {
+	display: block;
+	width: 220px;
+	height: 1rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 8px;
+	border: 0;
+	background-color: #262626;
+	margin: 2rem auto;
+}
+
+.bar[value]::-webkit-progress-inner-element {
+	border-radius: 8px;
+	overflow: hidden;
+	background-position: inherit;
+}
+
+.bar[value]::-webkit-progress-bar {
+	background-color: transparent;
+	background-position: inherit;
+}
+
+.bar[value]::-webkit-progress-value {
+	background: repeating-linear-gradient(
+			45deg,
+			transparent 0 6px,
+			rgba(0, 0, 0, 0.1) 6px 12px
+		),
+		linear-gradient(var(--primary-dark-color), var(--font-color));
+	background-size: calc(12px / 0.707) 100%, /* 0.707 = cos(45deg)*/ 100% 800%;
+	background-position: inherit;
+	transition: all 500ms ease-out;
+}
+
+.bar[value]::-moz-progress-bar {
+	border-radius: 10px 0 0 10px / 10px 0 0 10px;
+	box-shadow: inset 2px 2px 2px rgba(90, 90, 92, 0.2);
+	background: repeating-linear-gradient(
+			45deg,
+			transparent 0 6px,
+			rgba(0, 0, 0, 0.1) 6px 12px
+		),
+		linear-gradient(#4a54ba, #888ccf, #b8b9cc);
+	background-size: calc(12px / 0.707) 100%, /* 0.707 = cos(45deg)*/ 100% 800%;
+	background-position: inherit;
+}
+
+@media screen and (min-width: 1000px) {
+	.bar[value] {
+		width: 928px;
+	}
+}

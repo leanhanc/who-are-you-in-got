@@ -41,8 +41,8 @@
 }
 
 .answer {
-	min-height: 64px;
-	margin-top: 3rem;
+	min-height: 96px;
+	margin-top: 2rem;
 	font-family: var(--inconsolata);
 	font-weight: 500;
 	font-size: 14px;
@@ -73,10 +73,11 @@
 	.question {
 		font-size: 1.5rem;
 		line-height: 2;
+		margin-top: 6rem;
 	}
 
 	.answer {
 		font-size: 1.2rem;
-		min-height: 132px;
+		margin-top: 3rem;
 	}
 }

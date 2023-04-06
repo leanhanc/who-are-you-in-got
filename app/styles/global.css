@@ -15,5 +15,7 @@ body {
 
 main {
 	height: 100%;
+	max-width: 1366px;
+	margin: auto;
 	padding: 2rem;
 }
