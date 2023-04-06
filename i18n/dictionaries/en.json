@@ -17,105 +17,105 @@
 	"answers": [
 		[
 			{
-				"author": "jon",
+				"author": "1",
 				"text": "I would dismiss the accusation because I would trust the person I have chosen."
 			},
 			{
-				"author": "tyrion",
+				"author": "6",
 				"text": "I might think that it could be true and it probably would partly be my fault because that could mean I wouldn't have given my partner what he or she wanted or needed."
 			},
 			{
-				"author": "daenerys",
+				"author": "3",
 				"text": "I would confront my partner face to face and ask them to look me in the eyes and tell me the truth."
 			},
 			{
-				"author": "cersei",
+				"author": "4",
 				"text": "I would carefully watch their every move. I would look for evidence and if I found any, I would see how to get even. No one messes with me."
 			},
 			{
-				"author": "petyr",
+				"author": "2",
 				"text": "It may be true or not, but first I would analyze who is telling me: they could be interested in getting my partner free from commitments."
 			},
 			{
-				"author": "sansa",
+				"author": "5",
 				"text": "I don't know. But if this person was the love of my life, I might be able to forgive an infidelity."
 			}
 		],
 		[
 			{
-				"author": "jon",
+				"author": "1",
 				"text": "I would join the military forces fighting for the independence."
 			},
 			{
-				"author": "sansa",
+				"author": "5",
 				"text": "It's hard for me to say. I'm not all that interested in politics."
 			},
 			{
-				"author": "daenerys",
+				"author": "3",
 				"text": "I see myself taking a political initiative to free slaves and help them join the rebel forces. I am a natural leader."
 			},
 			{
-				"author": "petyr",
+				"author": "2",
 				"text": "I would publicly support the loyalists just in case they win, but secretly provide weapons to the independentists."
 			},
 			{
-				"author": "cersei",
+				"author": "4",
 				"text": "I wouldn't really care as long as my family comes out of the conflict well-positioned."
 			},
 			{
-				"author": "tyrion",
+				"author": "6",
 				"text": "Given that my strongest weapon is my words and not my physical strength, I would advise on the risks associated with declaring independence, consider all possible strategies, and recommend the most appropriate one."
 			}
 		],
 		[
 			{
-				"author": "daenerys",
+				"author": "3",
 				"text": "As strange as it may seem, horoscopes are often surprisingly accurate."
 			},
 			{
-				"author": "tyrion",
+				"author": "6",
 				"text": "I don't believe in astrology or horoscopes as I consider them to be pseudo-science nonsense."
 			},
 			{
-				"author": "petyr",
+				"author": "2",
 				"text": "I don't really care for horoscopes because I don't need to ask people about their zodiac sign to read them as an open book."
 			},
 			{
-				"author": "jon",
+				"author": "1",
 				"text": "I may occasionally check horoscopes out of curiosity, but I don't take them too seriously as I believe that I control my own destiny through my own choices and actions."
 			},
 			{
-				"author": "cersei",
+				"author": "4",
 				"text": "It only serves as an illusion for weak people. It's a placebo."
 			},
 			{
-				"author": "sansa",
+				"author": "5",
 				"text": "I find horoscopes interesting and sometimes very entertaining, but I believe that ultimately our fate is determined by a higher power."
 			}
 		],
 		[
 			{
-				"author": "sansa",
+				"author": "5",
 				"text": "To form a beautiful and loving family."
 			},
 			{
-				"author": "cersei",
+				"author": "4",
 				"text": "Witnessing those who did me wrong suffer."
 			},
 			{
-				"author": "jon",
+				"author": "1",
 				"text": "To be up to the expectations of my loved ones."
 			},
 			{
-				"author": "daenerys",
+				"author": "3",
 				"text": "To aid the oppressed and fight for social justice."
 			},
 			{
-				"author": "tyrion",
+				"author": "6",
 				"text": "I don't ask for too much. I'm happy as long as I can indulge in the pleasures of life, like a good drink."
 			},
 			{
-				"author": "petyr",
+				"author": "2",
 				"text": "I am motivated by a desire for success, whether that means accumulating wealth, gaining power, or achieving fame."
 			}
 		]
@@ -125,5 +125,9 @@
 		"stronglyAgree": "Strongly Agree",
 		"disagree": "Disagree",
 		"stronglyDisagree": "Strongly Disagree"
+	},
+	"seeResults": {
+		"ty": "Thank you! That is all we needed. We now know which is the character you are most alike and also the one that is the least like you.",
+		"cta": "Reveal my Results"
 	}
 }

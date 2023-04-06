@@ -11,17 +11,19 @@ import { Character } from "@/app/components/views/Game/Game.reducer";
 import useGameContext from "@/app/components/views/Game/Game.context";
 
 // Styles
-import styles from "./ResponseButtons.module.css";
+import styles from "./ButtonPanel.module.css";
 
-interface ResponseButtonsProps {
+interface ButtonPanelProps {
 	possibleResponses: Dictionary["possibleResponses"];
 	answers: Dictionary["answers"];
+	seeResults: Dictionary["seeResults"];
 }
 
-export default function ResponseButtons({
+export default function ButtonPanel({
 	possibleResponses,
 	answers,
-}: ResponseButtonsProps) {
+	seeResults,
+}: ButtonPanelProps) {
 	// Context
 	const { game, dispatch } = useGameContext();
 
@@ -83,7 +85,14 @@ export default function ResponseButtons({
 	};
 
 	if (game.status === "FINISHED") {
-		return null;
+		return (
+			<article className={styles.finished}>
+				<p>{seeResults.ty}</p>
+				<Button variant="shinny" href={`/postgame/${game.result}`}>
+					{seeResults.cta}
+				</Button>
+			</article>
+		);
 	}
 
 	return (

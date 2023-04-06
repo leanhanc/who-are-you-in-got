@@ -1,7 +1,7 @@
 // Components
 import Header from "@/app/components/shared/Header";
 import QuestionsAndAnswers from "@/app/components/views/Game/components/QuestionsAndAnswers";
-import ResponseButtons from "@/app/components/views/Game/components/ResponseButtons";
+import ButtonPanel from "@/app/components/views/Game/components/ButtonPanel";
 import ProgressBar from "@/app/components/views/Game/components/ProgressBar";
 
 // Context Providers
@@ -26,9 +26,10 @@ export default function Game({ dictionary }: GameProps) {
 					questions={dictionary.questions}
 					answers={dictionary.answers}
 				/>
-				<ResponseButtons
+				<ButtonPanel
 					possibleResponses={dictionary.possibleResponses}
 					answers={dictionary.answers}
+					seeResults={dictionary.seeResults}
 				/>
 				<ProgressBar />
 			</GameProvider>

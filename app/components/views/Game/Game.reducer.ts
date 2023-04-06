@@ -1,31 +1,38 @@
+// Types
 import { Reducer } from "react";
+
+// Utils
+import characters from "@/app/lib/characters";
+import { getResult } from "@/app/lib/result";
 
 export interface GameState {
 	characterScore: {
-		cersei: number;
-		daenerys: number;
-		jon: number;
-		petyr: number;
-		sansa: number;
-		tyrion: number;
+		[characters.jon.id]: number;
+		[characters.petyr.id]: number;
+		[characters.daenerys.id]: number;
+		[characters.cersei.id]: number;
+		[characters.sansa.id]: number;
+		[characters.tyrion.id]: number;
 	};
 	currentQuestion: number;
 	currentAnswer: number;
 	status: "IN_PROGRESS" | "FINISHED";
+	result: string;
 }
 
 export const initialGameState: GameState = {
 	characterScore: {
-		cersei: 0,
-		daenerys: 0,
-		jon: 0,
-		petyr: 0,
-		sansa: 0,
-		tyrion: 0,
+		[characters.jon.id]: 0,
+		[characters.daenerys.id]: 0,
+		[characters.petyr.id]: 0,
+		[characters.cersei.id]: 0,
+		[characters.sansa.id]: 0,
+		[characters.tyrion.id]: 0,
 	},
 	currentQuestion: 0,
 	currentAnswer: 0,
 	status: "IN_PROGRESS",
+	result: "",
 };
 
 export type Character = keyof typeof initialGameState.characterScore;
@@ -61,6 +68,7 @@ const gameReducer: Reducer<GameState, GameAction> = function (state, action) {
 				// Handle all answers given for all questions
 				return {
 					...state,
+					result: getResult(state.characterScore),
 					status: "FINISHED",
 				};
 			}

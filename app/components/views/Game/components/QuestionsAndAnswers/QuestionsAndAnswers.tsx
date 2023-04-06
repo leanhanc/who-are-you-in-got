@@ -48,7 +48,7 @@ export default function QuestionsAndAnswers({
 	}, [game.currentAnswer, question]);
 
 	if (game.status === "FINISHED") {
-		return <p>juego terminado!</p>;
+		return null;
 	}
 
 	return (
