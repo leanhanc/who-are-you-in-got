@@ -5,7 +5,7 @@ import Button from "@/app/components/shared/Button";
 
 // Types
 import { Dictionary } from "@/@types/i18n";
-import { Character } from "@/app/components/views/Game/Game.reducer";
+import { CharacterId } from "@/@types/character";
 
 // Context
 import useGameContext from "@/app/components/views/Game/Game.context";
@@ -30,7 +30,7 @@ export default function ButtonPanel({
 	// Derived
 	const answerAuthorCharacter = answers[game.currentQuestion][
 		game.currentAnswer
-	].author as Character;
+	].author as CharacterId;
 
 	// Handlers
 	const handleStronglyAgree = () => {

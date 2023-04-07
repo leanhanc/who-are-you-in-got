@@ -1,8 +1,9 @@
 // Types
 import { Reducer } from "react";
+import { CharacterId } from "@/@types/character";
 
 // Utils
-import characters from "@/app/lib/characters";
+import { characters } from "@/app/lib/characters";
 import { getResult } from "@/app/lib/result";
 
 export interface GameState {
@@ -35,11 +36,10 @@ export const initialGameState: GameState = {
 	result: "",
 };
 
-export type Character = keyof typeof initialGameState.characterScore;
 export type GameAction = {
 	type: "answer" | "advance" | "reset";
 	payload?: {
-		character?: Character;
+		character?: CharacterId;
 		scoreChange?: 1 | 3 | -1 | -3;
 	};
 };
@@ -54,8 +54,8 @@ const gameReducer: Reducer<GameState, GameAction> = function (state, action) {
 				...state,
 				characterScore: {
 					...state.characterScore,
-					[action.payload?.character]:
-						state.characterScore[action.payload?.character] +
+					[action.payload.character]:
+						state.characterScore[action.payload.character] +
 						action.payload?.scoreChange,
 				},
 			};
