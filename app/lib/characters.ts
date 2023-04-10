@@ -15,7 +15,8 @@ export function getCharactersNamesFromIds(
 	characters: Characters
 ) {
 	const characterNames = ids.map((id) => {
-		return Object.values(characters).find((character) => character.id === id);
+		return Object.values(characters).find((character) => character.id === id)
+			?.name;
 	});
 
 	return characterNames;

@@ -1,6 +1,7 @@
 // Utils
 import { CharacterId } from "@/@types/character";
 import Button from "@/app/components/shared/Button";
+import Postgame from "@/app/components/views/Postgame";
 import { characters, getCharactersNamesFromIds } from "@/app/lib/characters";
 
 export default function PostgamePage({
@@ -27,11 +28,13 @@ export default function PostgamePage({
 
 	const characterList = getCharactersNamesFromIds(ids, characters);
 
+	if (!characterList.length) {
+		return null;
+	}
+
 	return (
-		<div>
-			{characterList.map((character) => (
-				<p key={character?.id}>{character?.name}</p>
-			))}
-		</div>
+		<main>
+			<Postgame characterList={characterList} />
+		</main>
 	);
 }
