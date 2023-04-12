@@ -1,4 +1,7 @@
 {
+	"common": {
+		"continue": "Continue"
+	},
 	"head": {
 		"title": "Which got character are you?",
 		"description": "Discover which Game of Thrones character you are by answering questions about your personality and personal philosophy."
@@ -129,5 +132,37 @@
 	"seeResults": {
 		"ty": "Thank you! That is all we needed. We now know which is the character you are most alike and also the one that is the least like you.",
 		"cta": "Reveal my Results"
+	},
+	"profiles": {
+		"1": {
+			"alias": "The White Wolf, The Bastard of Winterfell, King Crow",
+			"bio": "You are Jon Snow. The personal values most important to you are honesty and honorability.\nYou practice stoicism and have a strong sense of duty and self-sacrifice.\nSome see naivety in your actions, claiming that trusting people gets you into trouble. However, whether or not that is accurate, you know very well that you do it because you expect everyone to be held to the same standards you impose on yourself: always giving your all for the people you care about, without complaints and without asking for anything in return.",
+			"dixit": "I've sworn allegiance to the Night's Watch. If I don't keep my word, what kind of king would I be?"
+		},
+		"2": {
+			"alias": "Little Finger",
+			"bio": "You are Petyr Baelish. Your ambition is limitless, and your cunningness is unparalleled.\nYou see life as nothing but a game, and even when they knock you down along the way, you always get back up and persevere until you achieve your goals.\nYou thrive on coming from behind to take it all. You have the ability to read people and anticipate their every move.\nSome view you as a selfish and shameless person, but you pay no heed and continue to pursue your own agenda because you believe that man is a wolf to man. You trust no one, and you do not expect anyone to trust you in return.",
+			"dixit": "Sometimes when I try to understand a person's motives I play a little game. I assume the worst."
+		},
+		"3": {
+			"alias": "Dany, Daenerys Stormborn, Mhysa, Khaleesi, Mother of Dragons",
+			"bio": "You are Daenerys Targaryen, also known as Daenerys Stormborn, Khaleesi, Mother of Dragons, or just Dany.\nYou place a great deal of importance on loyalty and have high expectations of your friends. You expect them to go the extra mile for you, just as you do for them.\nYou are an incredibly empathetic person, able to empathize with those who are vulnerable. You do not hesitate to dispense justice, though at times it may seem like you get carried away, letting your emotions fueled by the fire inside you show in your eyes. However, you know that your heart is in the right place, as you strive to leave your mark and create a world that is more free and fair.",
+			"dixit": "-The city is yours. Sometimes is better to answer injustice with mercy.\n-I will anwser injustice with justice."
+		},
+		"4": {
+			"alias": "The Lion, The mother of madness",
+			"bio": "You are Cersei Lannister. You are pure fire.\nYou have the ability to show equal measures of love and hate in your heart, providing shelter to your family while harboring deep-seated animosity towards those who have dared to harm you. You make sure that no aggression against you goes without retribution, often inflicting even greater pain upon your enemies than they have caused you. Your family is the only thing that matters to you in this world, and you care little for the rest.\nSome say that you are spiteful, even hateful, but you pay no heed to the words of mediocre individuals, often dismissing them as plebeians. You look down upon them with disdain, offering your most contemptuous gaze.",
+			"dixit": "Everyone who isn't us is an enemy (to his son)."
+		},
+		"5": {
+			"alias": "Little Bird",
+			"bio": "You are the young Sansa Stark.\nYou possess an inherent candor and a penchant for dreaming, but at times, your innocence leaves you vulnerable to disappointment in a world that can often be dark and challenging.\nYou are uninterested in politics, viewing those who engage in it as deceitful and malevolent.\nYour appreciation for aesthetics and your desire to be liked by others sometimes leads people to underestimate you as shallow. However, you pay no heed to such judgments, for you believe that gentleness and beauty hold the power to counter the violence and darkness that pervade the world.",
+			"dixit": "King Joffrey will come back. The worst ones always live."
+		},
+		"6": {
+			"alias": "The Imp",
+			"bio": "You are Tyrion Lannister, known for your empathy, wisdom, and wit.\nYour words are carefully chosen, and you often provide valuable advice to your friends.\nDespite fitting the stereotype of an intellectual, you understand that life is about enjoying its pleasures, even if some may be frowned upon by society's morals. You know how to indulge yourself and find pleasure in life. However, your rational and hedonistic nature does not mean you lack sensitivity. Your heart is always in the right place, and you care deeply about those around you.",
+			"dixit": "It's easy to confuse what is with what ought to be, especially when what is has worked out in your favor."
+		}
 	}
 }

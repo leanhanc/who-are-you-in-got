@@ -1,31 +1,44 @@
-// Types
-import { CharacterName } from "@/@types/character";
+"use client";
 
 // Components
 import CharacterModal from "@/app/components/views/Postgame/components/CharacterModal";
+import CharacterProfile from "@/app/components/views/Postgame/components/CharacterProfile";
+
+// Types
+import { Character } from "@/@types/character";
+import { Dictionary } from "@/@types/i18n";
+import { useState } from "react";
 
 interface PostgameProps {
-	characterList?: CharacterName[];
+	characters: Character[];
+	profiles: Dictionary["profiles"];
+	common: Dictionary["common"];
 }
 
-export default function Postgame({ characterList }: PostgameProps) {
+export default function Postgame({
+	characters,
+	profiles,
+	common,
+}: PostgameProps) {
+	const [isShowingProfile, setIsShowingProfile] = useState(true);
+
+	const [mostAlike, secondMostAlike, leastAlike] = characters;
+
+	// Handlers
+	const handleCharacterProfileClose = () => setIsShowingProfile(false);
+
 	return (
-		<>
-			<CharacterModal>
-				<div
-					style={{
-						display: "flex",
-						alignItems: "center",
-						flexDirection: "column",
-						justifyContent: "center",
-						height: "100%",
-					}}
-				>
-					{characterList?.map((c) => (
-						<p key={c}>{c}</p>
-					))}
-				</div>
-			</CharacterModal>
-		</>
+		<div>
+			{isShowingProfile && (
+				<CharacterModal onClose={handleCharacterProfileClose}>
+					<CharacterProfile
+						profiles={profiles}
+						common={common}
+						character={mostAlike}
+						onContinuePressed={handleCharacterProfileClose}
+					/>
+				</CharacterModal>
+			)}
+		</div>
 	);
 }

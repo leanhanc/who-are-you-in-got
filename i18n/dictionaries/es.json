@@ -1,4 +1,7 @@
 {
+	"common": {
+		"continue": "Continuar"
+	},
 	"head": {
 		"title": "¿Quién sos en Game of Thrones?",
 		"description": "Descubre qué personaje de Game of Thrones sos respondiendo preguntas sobre tu personalidad y filosofía."
@@ -129,5 +132,37 @@
 	"seeResults": {
 		"ty": "!Gracias! Eso es todo lo que necesitamos. Ya sabemos cuál es el personaje al que más te pareces y al que menos.",
 		"cta": "Ver mis resultados"
+	},
+	"profiles": {
+		"1": {
+			"alias": "El Lobo Blanco, El Bastardo de Winterfell, Rey Cuervo",
+			"bio": "Sos Jon Snow. Los valores más importantes para vos son la honestidad y la honorabilidad. Practicás el estoicismo, tenés un alto sentido del deber y del sacrificio.\nAlgunos ven ingenuidad en tus actos, dicen que creer en las personas te juega malas pasadas pero, tengan o no razón, vos sabés bien que lo hacés porque esperás que el resto se rija por las mismas exigencias de conducta que te auto-imponés: siempre dar todo por los tuyos, sin quejarse ni pedir nada a cambio.",
+			"dixit": "Juré lealtad a la Guardia de la Noche, si no cumplo mi palabra, ¿qué clase de Rey sería?"
+		},
+		"2": {
+			"alias": "Meñique",
+			"bio": "Sos Petyr Baelish. Tu ambición no conoce límites, tu astucia tampoco.\nSabés que la vida no es más que un juego y, aunque te den golpes en el camino, nunca vas a dejar de levantarte y perseverar hasta cumplir tus objetivos. Te hacés de abajo y vas por todo.\nTenés la capacidad de leer a las personas, de anticiparte a sus movimientos.\nAlgunos ven en vos cinismo y egoísmo pero no escuchás y seguís porque tu convicción es que el hombre es el lobo del hombre. No confías en nadie y tampoco esperás que nadie confíe en vos.",
+			"dixit": "Cuando no conozco las intenciones de una persona y quiero entenderlas hago un pequeño jueguito: asumo lo peor."
+		},
+		"3": {
+			"alias": "Dany, Daenerys de la Tormenta, Mhysa, Khaleesi, Madre de Dragones",
+			"bio": "Sos Daenarys Targaryen, alias Daenarys de la Tormenta, alias Khalessi, Madre de Dragones. O simplemente Dany.\nValorás mucho la lealtad y sos exigente con tus amigos. Esperás que se jueguen por vos como vos lo hacés por ellos.\nSos una persona empática, que puede ponerse en el lugar de los más vulnerables.No te tiembla el pulso a la hora de impartir justicia. Quizás parezca que a veces se te va la mano y que te dejás llevar por las emociones, ese fuego que llevás adentro y se refleja en tus ojos.\nPero vos sabes que tu corazón esta en el lugar indicado. Querés dejar tu marca haciendo el mundo un lugar más libre y justo.",
+			"dixit": "-La ciudad ya es tuya. A veces es conveniente responderle a la injusticia con piedad\n-Voy a responderle a la injusticia con justicia."
+		},
+		"4": {
+			"alias": "La Leona, La madre de la locura",
+			"bio": "Sos Cersei Lannister. Tenés la capacidad de albergar en tu corazón la misma dosis de amor por tu familia que de odio hacia quienes se atrevieron a hacerte daño. Te asegurás que no haya agresión que no sea retribuida, a veces infligiendo en tus enemigos el doble del dolor que te provocaron.\nTu familia es lo único que importa en el mundo, el resto te tiene sin cuidado.\nAlgunos dicen que sos un ser rencoroso, hasta odioso, pero a vos no te importan los comentarios de los mediocres de la plebe. A esos los mirás desde arriba y con tu mejor cara de desdén.",
+			"dixit": "Todo aquel que no sea nosotros es un enemigo (a su hijo)"
+		},
+		"5": {
+			"alias": "Pequeño Pajarito",
+			"bio": "Sos la joven Sansa Stark.\nSos una persona cándida, soñadora y un poco inocente.\nEsas cualidades te llevan a ser descepcionada por un mundo que, muchas vececes, te parece demasiado sombrío y difícil de afrontar.\nNo te interesa mucho la política y pensás que los que se dedican a ella suelen ser deshonestos y un poco perversos.\nSí te interesa la estética y gustarle a las personas, por eso algunos te creen demasiado superficial. Pero no les hacés caso, vos sabés bien que no hay nada mejor que la gentileza y la belleza para contrarrestar la violencia y la oscuridad del mundo.",
+			"dixit": "El Rey Joffrey volverá. Los peores siempre sobreviven."
+		},
+		"6": {
+			"alias": "El Gnomo",
+			"bio": "Sos Tyrion Lannister. Sos una persona empática, ilustrada, prudente y siempre con la palabra justa.\nTe destacás dando buenos consejos a tus amigos.\nAunque a alguno esto puede sonarle a estereotipo de intelectual no los sos: sabés que de nada sirve la vida si uno no se puede entregar a sus placeres. Sabés darte gustos, sean o no bien vistos por la moral de tu época.\nAdemás, que seas racional y un poco hedonista, no significa que no tengas un costado sensible. Tu corazón siempre está del lado correcto.",
+			"dixit": "Es fácil confundir como son las cosas con cómo deben ser, especialmente si el cómo son siempre ha jugado a tu favor."
+		}
 	}
 }

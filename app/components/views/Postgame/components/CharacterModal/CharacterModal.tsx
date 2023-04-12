@@ -1,13 +1,14 @@
 // Styles
 import styles from "./CharacterModal.module.css";
 
-// Assets
-import Parchment from "@/public/images/parchment.webp";
-
 // Types
 import { PropsWithChildren } from "react";
 
-export default function CharacterModal({ children }: PropsWithChildren) {
+interface CharacterModal extends PropsWithChildren {
+	onClose: () => void;
+}
+
+export default function CharacterModal({ children, onClose }: CharacterModal) {
 	return (
 		<article className={styles.modal}>
 			<div aria-hidden className={styles.background}>
