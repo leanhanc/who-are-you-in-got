@@ -39,3 +39,9 @@ menu li a.active:visited,
 .menu li a:hover {
 	text-decoration: underline;
 }
+
+@media screen and (min-width: 1000px) {
+	.menu {
+		margin-top: 3rem;
+	}
+}

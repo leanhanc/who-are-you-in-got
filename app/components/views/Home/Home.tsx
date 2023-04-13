@@ -2,6 +2,7 @@
 import Header from "@/app/components/shared/Header";
 import Ornaments from "@/app/components/views/Home/components/Ornaments";
 import LocaleSwitcher from "@/app/components/views/Home/components/LocaleSwitcher";
+import Sigils from "@/app/components/views/Home/components/Sigils";
 import Button from "@/app/components/shared/Button";
 
 // Types
@@ -21,12 +22,8 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 			<Ornaments />
 			<Header dictionary={dictionary} />
 			<p className={styles["find-out"]}>{dictionary.header.takeTheTest}</p>
-			<Button
-				variant="shinny"
-				href="/game"
-				animationDelay={4}
-				margin="5rem auto"
-			>
+			<Sigils />
+			<Button variant="shinny" href="/game" animationDelay={4}>
 				{dictionary.header.ctaText}
 			</Button>
 			<LocaleSwitcher currentLocale={currentLocale} />

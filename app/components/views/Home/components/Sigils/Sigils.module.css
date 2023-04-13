@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.sigils {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin: 3em auto;
+}
+
+.sigils img {
+	width: 48px;
+	max-width: 100%;
+	height: auto;
+	opacity: 0;
+}
+
+@media screen and (min-width: 1000px) {
+	.sigils {
+		margin: 4rem auto;
+	}
+	.sigils img {
+		width: 96px;
+	}
+}
+
+.baratheon {
+	animation-delay: 3s;
+	animation-name: fadeIn;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+
+.targaryen {
+	animation-delay: 3.25s;
+	animation-name: fadeIn;
+	animation-duration: 400ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+
+.stark {
+	animation-delay: 3.5s;
+	animation-name: fadeIn;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+
+.lannister {
+	animation-delay: 3.75s;
+	animation-name: fadeIn;
+	animation-duration: 200ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
