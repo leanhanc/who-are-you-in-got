@@ -47,7 +47,6 @@
 }
 
 .background {
-	background-blend-mode: multiply;
 	background-image: url("../../../../../../public/images/parchment.webp");
 	background-size: cover;
 	display: block;
