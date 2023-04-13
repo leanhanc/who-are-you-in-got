@@ -54,5 +54,13 @@ export default function Button({
 		);
 	}
 
-	return null;
+	return (
+		<button
+			className={classNames(["button"])}
+			style={dynamicStyles}
+			onClick={onClick}
+		>
+			{children}
+		</button>
+	);
 }

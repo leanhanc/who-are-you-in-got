@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: var(--font-color);
+	color: #000;
 	padding: 2rem;
 }
 
@@ -57,14 +57,16 @@
 	padding-top: 1rem;
 	letter-spacing: 1px;
 	font-style: italic;
+	opacity: 0.7;
 }
 
 .bio {
 	font-family: var(--inconsolata);
 	white-space: pre-wrap;
-	font-size: 1rem;
+	font-size: 18px;
 	letter-spacing: 1px;
-	font-weight: 500;
+	opacity: 0.7;
+	font-weight: 600;
 }
 
 .dixit {
@@ -74,6 +76,7 @@
 	white-space: pre-wrap;
 	width: 66%;
 	text-align: center;
+	opacity: 0.7;
 }
 
 .footer {
@@ -83,13 +86,15 @@
 
 @media screen and (min-width: 1000px) {
 	.profile-container {
-		width: 50%;
+		width: 40%;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	.bio {
-		width: 50%;
+		padding-left: 2rem;
+		width: 60%;
+
 		margin: 2rem auto;
 	}
 
