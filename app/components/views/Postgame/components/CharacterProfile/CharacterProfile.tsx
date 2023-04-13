@@ -9,6 +9,7 @@ import { Dictionary } from "@/@types/i18n";
 import styles from "./CharacterProfile.module.css";
 
 // Images
+import Background from "@/public/images/parchment.webp";
 import Jon from "@/public/images/characters/jon.webp";
 import Petyr from "@/public/images/characters/petyr.webp";
 import Daenerys from "@/public/images/characters/daenerys.webp";
@@ -40,6 +41,13 @@ export default function CharacterProfile({
 }: CharacterProfileProps) {
 	return (
 		<div className={styles.character}>
+			<img
+				src={Background.src}
+				alt=""
+				aria-hidden
+				className={styles.background}
+				loading="eager"
+			/>
 			<header className={styles.header}>
 				<h1 className={styles.name}>{character.name}</h1>
 			</header>

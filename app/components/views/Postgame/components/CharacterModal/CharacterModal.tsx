@@ -10,10 +10,8 @@ interface CharacterModal extends PropsWithChildren {
 
 export default function CharacterModal({ children, onClose }: CharacterModal) {
 	return (
-		<article className={styles.modal}>
-			<div aria-hidden className={styles.background}>
-				{children}
-			</div>
-		</article>
+		<div className={styles.modal}>
+			<article>{children}</article>
+		</div>
 	);
 }

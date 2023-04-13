@@ -28,7 +28,7 @@ export default function Postgame({
 	const handleCharacterProfileClose = () => setIsShowingProfile(false);
 
 	return (
-		<div>
+		<>
 			{isShowingProfile && (
 				<CharacterModal onClose={handleCharacterProfileClose}>
 					<CharacterProfile
@@ -39,6 +39,6 @@ export default function Postgame({
 					/>
 				</CharacterModal>
 			)}
-		</div>
+		</>
 	);
 }
