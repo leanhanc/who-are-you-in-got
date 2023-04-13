@@ -2,21 +2,25 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	color: #000;
 	padding: 2rem;
 }
 
 .character button {
 	margin: 4rem auto 2rem auto;
-	padding: 1rem 3rem;
+	padding: 1rem 4rem;
 	font-family: var(--inconsolata);
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	color: var(--font-darker-color);
+	transition: all 200ms ease-in-out;
 }
 
 .character button:active {
-	color: var(--font-color);
+	color: var(--font-darker-color);
+}
+
+.character button:hover {
+	background-color: var(--primary-dark-color);
 }
 
 .header {
@@ -25,12 +29,12 @@
 }
 
 .name {
+	color: var(--font-darker-color);
 	font-family: var(--got-regular);
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: 0.5rem;
 	line-height: 2;
-	opacity: 0.7;
 	text-align: center;
 }
 
@@ -43,40 +47,68 @@
 	border-radius: 0.5rem;
 	box-shadow: 1px 2px 3rem 8px var(--primary-color);
 	height: auto;
-	width: 300px;
-	opacity: 0.7;
+	width: 260px;
+	margin: auto;
+	opacity: 0.75;
 	margin: auto;
 }
 
 .caption {
-	font-size: 14px;
+	color: var(--font-darker-color);
 	font-family: var(--cinzel);
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 700;
+	letter-spacing: 1px;
 	margin: auto;
-	text-align: center;
 	max-width: 300px;
 	padding-top: 1rem;
-	letter-spacing: 1px;
-	font-style: italic;
-	opacity: 0.7;
+	text-align: center;
 }
 
 .bio {
+	color: var(--font-dark-color);
 	font-family: var(--inconsolata);
-	white-space: pre-wrap;
 	font-size: 18px;
-	letter-spacing: 1px;
-	opacity: 0.7;
 	font-weight: 600;
+	letter-spacing: 1px;
+	white-space: pre-wrap;
 }
 
 .dixit {
-	margin: 2rem auto auto auto;
-	text-transform: uppercase;
-	font-style: italic;
-	white-space: pre-wrap;
-	width: 66%;
+	border-left: 5px solid var(--primary-dark-color);
+	color: var(--font-dark-color);
+	margin: 1rem auto;
+	quotes: "\201C""\201D""\2018""\2019";
 	text-align: center;
-	opacity: 0.7;
+	width: 100%;
+	padding: 0 0.5rem;
+}
+
+.dixit p {
+	line-height: 2.5;
+	font-weight: 600;
+	white-space: pre-wrap;
+	font-family: var(--cinzel);
+	font-size: 1.2rem;
+}
+
+.dixit p:before {
+	content: open-quote;
+	font-size: 4rem;
+	line-height: 0.1rem;
+	vertical-align: -1.5rem;
+	position: relative;
+	left: -4px;
+}
+
+.dixit p:after {
+	content: close-quote;
+	font-size: 4rem;
+	line-height: 0.1rem;
+	vertical-align: -1.5rem;
+	position: relative;
+	right: -1rem;
 }
 
 .footer {
@@ -94,8 +126,7 @@
 	.bio {
 		padding-left: 2rem;
 		width: 60%;
-
-		margin: 2rem auto;
+		margin: 1.5rem auto;
 	}
 
 	.name {
@@ -105,5 +136,9 @@
 	.character {
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	.dixit {
+		width: 75%;
 	}
 }

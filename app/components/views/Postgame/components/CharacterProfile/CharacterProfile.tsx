@@ -62,7 +62,9 @@ export default function CharacterProfile({
 			<p className={styles.bio}>{profiles[character.id].bio}</p>
 
 			<footer className={styles.footer}>
-				<p className={styles.dixit}>{profiles[character.id].dixit}</p>
+				<blockquote className={styles.dixit}>
+					<p>{profiles[character.id].dixit}</p>
+				</blockquote>
 
 				<Button onClick={onContinuePressed} variant="outlined">
 					{common.continue}
