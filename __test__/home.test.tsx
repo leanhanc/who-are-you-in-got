@@ -13,7 +13,7 @@ describe("Home", () => {
 
 		render(<Home currentLocale="en" dictionary={dictionary} />);
 
-		const cta = screen.getByText(dictionary.header.ctaText);
+		const cta = screen.getByRole("link", { name: dictionary.header.ctaText });
 
 		expect(cta).toBeInTheDocument();
 	});
@@ -23,8 +23,18 @@ describe("Home", () => {
 
 		render(<Home currentLocale="en" dictionary={dictionary} />);
 
-		const cta = screen.getByText(dictionary.header.ctaText);
+		const cta = screen.getByRole("link", { name: dictionary.header.ctaText });
 
 		expect(cta).toHaveTextContent(dictionary.header.ctaText);
+	});
+
+	it("has a link with the correct path to go to the Test page", async () => {
+		const dictionary = await getDictionary("en");
+
+		render(<Home currentLocale="en" dictionary={dictionary} />);
+
+		const cta = screen.getByRole("link", { name: dictionary.header.ctaText });
+
+		expect(cta).toHaveAttribute("href", "/game");
 	});
 });
