@@ -1,6 +1,7 @@
 {
 	"common": {
-		"continue": "Continuar"
+		"continue": "Continuar",
+		"close": "Cerrar"
 	},
 	"head": {
 		"title": "¿Quién sos en Game of Thrones?",

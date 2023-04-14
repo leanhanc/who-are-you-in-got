@@ -30,7 +30,7 @@ export default function Postgame({
 	return (
 		<>
 			{isShowingProfile && (
-				<CharacterModal onClose={handleCharacterProfileClose}>
+				<CharacterModal onClose={handleCharacterProfileClose} common={common}>
 					<CharacterProfile
 						profiles={profiles}
 						common={common}

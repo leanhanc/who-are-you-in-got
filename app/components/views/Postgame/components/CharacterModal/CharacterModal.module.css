@@ -48,3 +48,19 @@
 		overflow: scroll;
 	}
 }
+
+.close {
+	color: var(--font-darker-color);
+	font-family: var(--cinzel);
+	font-size: 2.5rem;
+	font-weight: 700;
+	height: 2rem;
+	position: absolute;
+	right: 1.5rem;
+	width: 1rem;
+	z-index: 1;
+}
+
+.close:hover {
+	color: var(--font-dark-color);
+}

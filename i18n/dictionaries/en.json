@@ -1,6 +1,7 @@
 {
 	"common": {
-		"continue": "Continue"
+		"continue": "Continue",
+		"close": "Close"
 	},
 	"head": {
 		"title": "Which got character are you?",
