@@ -6,7 +6,6 @@ import { getDictionary } from "@/i18n/get-dictionary";
 // Component
 import Home from "@/app/components/views/Home/Home";
 
-// Locale
 describe("Home", () => {
 	it("has a CTA button", async () => {
 		const dictionary = await getDictionary("en");
