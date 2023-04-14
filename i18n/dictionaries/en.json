@@ -173,6 +173,11 @@
 		"verySimilar": "very similar to ",
 		"similar": "similar to ",
 		"bitSimilar": "a bit like ",
-		"unlike": "and that you are far from being like "
+		"unlike": "and that you are far from being like ",
+		"reset": "Take test again",
+		"twitterShare": "Share in Twitter",
+		"whatsappShare": "Share in Whatsapp",
+		"shareStart": "I took the test to know who I am in Game Of Thrones and this is what I got: ",
+		"shareEnd": "You can do it here: "
 	}
 }
