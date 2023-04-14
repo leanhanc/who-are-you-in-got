@@ -1,5 +1,6 @@
 @keyframes tada {
 	from {
+		opacity: 0;
 		transform: scale3d(1, 1, 1);
 	}
 
@@ -23,6 +24,7 @@
 
 	to {
 		transform: scale3d(1, 1, 1);
+		opacity: 1;
 	}
 }
 
@@ -32,7 +34,9 @@
 	overflow: scroll;
 	animation-name: tada;
 	animation-duration: 0.75s;
+	animation-fill-mode: forwards;
 	height: 100%;
+	opacity: 0;
 }
 
 @media screen and (min-width: 1000px) {
