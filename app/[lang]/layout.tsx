@@ -13,6 +13,7 @@ import "@/app/styles/global.css";
 
 // Fonts
 import { Cinzel, Inconsolata } from "next/font/google";
+import { getDictionary } from "@/i18n/get-dictionary";
 
 const cinzel = Cinzel({
 	subsets: ["latin"],
@@ -42,11 +43,11 @@ export async function generateMetadata({
 }: {
 	params: { lang: Locale };
 }) {
+	const dictionary = await getDictionary(params.lang);
+
 	return {
-		title:
-			params.lang === "en"
-				? "Who are you in Game of Thrones?"
-				: "¿Quién sos en Game of Thrones?",
+		title: dictionary.head.title,
+		description: dictionary.head.description,
 	};
 }
 
