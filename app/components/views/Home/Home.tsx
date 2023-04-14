@@ -20,7 +20,7 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 	return (
 		<section className={styles.home}>
 			<Ornaments />
-			<Header dictionary={dictionary} />
+			<Header dictionary={dictionary.header} />
 			<Sigils />
 			<Button variant="shinny" href="/game" animationDelay={4}>
 				{dictionary.header.ctaText}

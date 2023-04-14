@@ -164,5 +164,14 @@
 			"bio": "Sos Tyrion Lannister. Sos una persona empática, ilustrada, prudente y siempre con la palabra justa.\nTe destacás dando buenos consejos a tus amigos.\nAunque a alguno esto puede sonarle a estereotipo de intelectual no los sos: sabés que de nada sirve la vida si uno no se puede entregar a sus placeres. Sabés darte gustos, sean o no bien vistos por la moral de tu época.\nAdemás, que seas racional y un poco hedonista, no significa que no tengas un costado sensible. Tu corazón siempre está del lado correcto.",
 			"dixit": "Es fácil confundir como son las cosas con cómo deben ser, especialmente si el cómo son siempre ha jugado a tu favor."
 		}
+	},
+	"fullResults": {
+		"youAre": "Sos ",
+		"canAlsoTellYou": "Podemos decirte que también ",
+		"extremelySimilar": "sos extremadamente similar a ",
+		"verySimilar": "muy parecido a ",
+		"similar": "similar a ",
+		"bitSimilar": "tenés algunas cositas de ",
+		"unlike": "y que estás lejos de ser como "
 	}
 }

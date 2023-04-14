@@ -8,7 +8,7 @@ import { Dictionary } from "@/@types/i18n";
 
 interface HeaderProps {
 	withAnimation?: boolean;
-	dictionary: Dictionary;
+	dictionary: Dictionary["header"];
 }
 
 export default function Header({
@@ -23,9 +23,7 @@ export default function Header({
 					[styles["with-animation"]]: withAnimation,
 				})}
 			>
-				<span className={styles["first-line"]}>
-					{dictionary.header.whoAreYou}
-				</span>
+				<span className={styles["first-line"]}>{dictionary.whoAreYou}</span>
 				<span className={styles["second-line"]}>GAME OF THRONES</span>
 			</h1>
 		</header>

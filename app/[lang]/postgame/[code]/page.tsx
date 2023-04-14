@@ -1,5 +1,5 @@
 // Types
-import { Character, CharacterId } from "@/@types/character";
+import { Character } from "@/@types/character";
 import { Locale } from "@/@types/i18n";
 
 // Components
@@ -10,7 +10,7 @@ import Postgame from "@/app/components/views/Postgame";
 import {
 	characters as charactersData,
 	validateResultCode,
-	getCharactersFromCode,
+	getCharactersFromResultCode,
 } from "@/app/lib/characters";
 import { getDictionary } from "@/i18n/get-dictionary";
 
@@ -36,19 +36,19 @@ export default async function PostgamePage({
 		);
 	}
 
-	const characters = getCharactersFromCode(code, charactersData) as Character[];
+	const characters = getCharactersFromResultCode(
+		code,
+		charactersData
+	) as Character[];
 	const dictionary = await getDictionary(lang);
-
-	if (!characters.length) {
-		return null;
-	}
+	const secondMostAlikeDifference = Number(code.split("").at(-1));
 
 	return (
 		<main>
 			<Postgame
 				characters={characters}
-				profiles={dictionary.profiles}
-				common={dictionary.common}
+				dictionary={dictionary}
+				secondMostAlikeDifference={secondMostAlikeDifference}
 			/>
 		</main>
 	);

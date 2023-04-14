@@ -20,7 +20,7 @@ interface GameProps {
 export default function Game({ dictionary }: GameProps) {
 	return (
 		<section className={styles.game}>
-			<Header dictionary={dictionary} withAnimation={false} />
+			<Header dictionary={dictionary.header} withAnimation={false} />
 			<GameProvider>
 				<QuestionsAndAnswers
 					questions={dictionary.questions}

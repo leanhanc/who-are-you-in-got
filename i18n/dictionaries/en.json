@@ -165,5 +165,14 @@
 			"bio": "You are Tyrion Lannister, known for your empathy, wisdom, and wit.\nYour words are carefully chosen, and you often provide valuable advice to your friends.\nDespite fitting the stereotype of an intellectual, you understand that life is about enjoying its pleasures, even if some may be frowned upon by society's morals. You know how to indulge yourself and find pleasure in life. However, your rational and hedonistic nature does not mean you lack sensitivity. Your heart is always in the right place, and you care deeply about those around you.",
 			"dixit": "It's easy to confuse what is with what ought to be, especially when what is has worked out in your favor."
 		}
+	},
+	"fullResults": {
+		"youAre": "You are ",
+		"canAlsoTellYou": "We can tell you that you are also ",
+		"extremelySimilar": "extremely similar to ",
+		"verySimilar": "very similar to ",
+		"similar": "similar to ",
+		"bitSimilar": "a bit like ",
+		"unlike": "and that you are far from being like "
 	}
 }

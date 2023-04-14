@@ -10,9 +10,12 @@ export const characters = {
 	tyrion: { id: "6", name: "Tyrion Lannister" },
 } as const;
 
-export function getCharactersFromCode(code: string, characterData: Characters) {
+export function getCharactersFromResultCode(
+	code: string,
+	characterData: Characters
+) {
 	const ids = code.split("") as CharacterId[];
-	const characters = ids.map((id) => {
+	const characters = ids.slice(0, 3).map((id) => {
 		return Object.values(characterData).find(
 			(character) => character.id === id
 		);
@@ -22,11 +25,12 @@ export function getCharactersFromCode(code: string, characterData: Characters) {
 }
 
 export function validateResultCode(code: string) {
-	const possibleIds = ["1", "2", "3", "4", "5", "6"];
-	const ids = code.split("") as CharacterId[];
+	const possibleValues = ["0", "1", "2", "3", "4", "5", "6"];
+	const values = code.split("") as CharacterId[];
 
 	const hasValidCode =
-		ids.length === 3 && ids.every((id) => possibleIds.includes(id));
+		values.length === 4 &&
+		values.every((value) => possibleValues.includes(value));
 
 	return hasValidCode;
 }

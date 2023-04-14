@@ -29,15 +29,13 @@ const characterImage = {
 interface CharacterProfileProps {
 	character: Character;
 	onContinuePressed: () => void;
-	profiles: Dictionary["profiles"];
-	common: Dictionary["common"];
+	dictionary: Dictionary;
 }
 
 export default function CharacterProfile({
 	character,
-	profiles,
+	dictionary,
 	onContinuePressed,
-	common,
 }: CharacterProfileProps) {
 	return (
 		<div className={styles.character}>
@@ -62,20 +60,20 @@ export default function CharacterProfile({
 						className={styles.image}
 					/>
 					<figcaption className={styles.caption}>
-						{profiles[character.id].alias}
+						{dictionary.profiles[character.id].alias}
 					</figcaption>
 				</picture>
 			</div>
 
-			<p className={styles.bio}>{profiles[character.id].bio}</p>
+			<p className={styles.bio}>{dictionary.profiles[character.id].bio}</p>
 
 			<footer className={styles.footer}>
 				<blockquote className={styles.dixit}>
-					<p>{profiles[character.id].dixit}</p>
+					<p>{dictionary.profiles[character.id].dixit}</p>
 				</blockquote>
 
 				<Button onClick={onContinuePressed} variant="outlined">
-					{common.continue}
+					{dictionary.common.continue}
 				</Button>
 			</footer>
 		</div>
