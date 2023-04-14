@@ -11,11 +11,12 @@
 }
 
 .sigils {
+	width: 100%;
+	max-width: 600px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 2rem;
-	margin: 3em auto;
+	margin: 3rem auto;
 }
 
 .sigils img {

@@ -9,8 +9,7 @@
 	},
 	"header": {
 		"whoAreYou": "Quién sos en",
-		"takeTheTest": "Hacé el test y enterate",
-		"ctaText": "comenzar"
+		"ctaText": "Hacer el test"
 	},
 	"questions": [
 		"Si alguien te dice que tu pareja te es infiel, ¿qué harías?",

@@ -21,7 +21,6 @@ export default function Home({ dictionary, currentLocale }: HomeProps) {
 		<section className={styles.home}>
 			<Ornaments />
 			<Header dictionary={dictionary} />
-			<p className={styles["find-out"]}>{dictionary.header.takeTheTest}</p>
 			<Sigils />
 			<Button variant="shinny" href="/game" animationDelay={4}>
 				{dictionary.header.ctaText}

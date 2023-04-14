@@ -7,11 +7,12 @@
 }
 
 .home a {
-	font-weight: 700;
+	font-weight: 900;
 	font-family: var(--inconsolata);
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	width: 280px;
+	margin-top: 3rem;
 }
 
 @keyframes fadeInWithZoom {
