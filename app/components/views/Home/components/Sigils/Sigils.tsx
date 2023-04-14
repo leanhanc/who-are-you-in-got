@@ -12,29 +12,29 @@ export default function Sigils() {
 		<article className={styles.sigils} aria-hidden>
 			<img
 				src={HouseBaratheon.src}
-				width={HouseBaratheon.width}
-				height={HouseBaratheon.height}
+				width={24}
+				height={24}
 				alt="House Baratheon"
 				className={styles.baratheon}
 			/>
 			<img
 				src={HouseTargaryen.src}
-				width={HouseTargaryen.width}
-				height={HouseTargaryen.height}
+				width={24}
+				height={24}
 				alt="House Targaryen"
 				className={styles.targaryen}
 			/>
 			<img
 				src={HouseStark.src}
-				width={HouseStark.width}
-				height={HouseStark.height}
+				width={24}
+				height={24}
 				alt="House Stark"
 				className={styles.stark}
 			/>
 			<img
 				src={HouseLannister.src}
-				width={HouseLannister.width}
-				height={HouseLannister.height}
+				width={24}
+				height={24}
 				alt="House Lannister"
 				className={styles.lannister}
 			/>
