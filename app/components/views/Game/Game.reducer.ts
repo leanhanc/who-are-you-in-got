@@ -37,7 +37,7 @@ export const initialGameState: GameState = {
 };
 
 export type GameAction = {
-	type: "answer" | "advance" | "reset";
+	type: "answer" | "advance";
 	payload?: {
 		character?: CharacterId;
 		scoreChange?: 1 | 3 | -1 | -3;
