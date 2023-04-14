@@ -4,6 +4,9 @@ import classNames from "classnames";
 // Config
 import { i18n } from "../../i18n/i18n-config";
 
+// Types
+import { Locale } from "@/@types/i18n";
+
 // Styles
 import "@/app/styles/reset.css";
 import "@/app/styles/global.css";
@@ -28,8 +31,23 @@ const inconsolata = Inconsolata({
 	variable: "--inconsolata",
 });
 
+// Generate Static Pages
 export async function generateStaticParams() {
 	return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
+// Generate Metadata
+export async function generateMetadata({
+	params,
+}: {
+	params: { lang: Locale };
+}) {
+	return {
+		title:
+			params.lang === "en"
+				? "Who are you in Game of Thrones?"
+				: "¿Quién sos en Game of Thrones?",
+	};
 }
 
 export default function Root({
