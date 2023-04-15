@@ -116,7 +116,7 @@
 	line-height: 0.1rem;
 	vertical-align: -1.5rem;
 	position: relative;
-	left: -4px;
+	left: -8px;
 }
 
 .dixit p:after {
@@ -125,7 +125,7 @@
 	line-height: 0.1rem;
 	vertical-align: -1.5rem;
 	position: relative;
-	right: -1rem;
+	right: -8px;
 }
 
 .footer {
