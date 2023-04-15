@@ -1,6 +1,8 @@
 import { Dictionary } from "@/@types/i18n";
 
 export function getResult(characterScore: { [key: string]: number }): string {
+	if (!characterScore || !Object.keys(characterScore).length) return "";
+
 	let keys = Object.keys(characterScore);
 	keys.sort((a, b) => characterScore[b] - characterScore[a]);
 
