@@ -59,7 +59,11 @@ export default function FullResults({
 	return (
 		<section className={styles["full-results"]}>
 			<Header dictionary={header} withAnimation={false} />
-			<div className={styles["extra-feedback"]} ref={elementToShare}>
+			<div
+				className={styles["extra-feedback"]}
+				ref={elementToShare}
+				data-testid="extra-feedback"
+			>
 				<p>
 					{fullResults.youAre}
 					<span className={styles.primary}>{mostAlike.name}.</span>

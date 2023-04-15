@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 import { getDictionary } from "@/i18n/get-dictionary";
 
 // Component
-import Home from "@/app/components/views/Home/Home";
+import Home from "@/app/components/views/Home";
 
 describe("Home", () => {
 	it("has a CTA button", async () => {

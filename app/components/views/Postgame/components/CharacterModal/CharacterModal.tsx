@@ -16,7 +16,7 @@ export default function CharacterModal({
 	common,
 }: CharacterModal) {
 	return (
-		<div className={styles.modal}>
+		<div className={styles.modal} role="dialog">
 			<button className={styles.close} onClick={onClose} title={common.close}>
 				&times;
 			</button>
