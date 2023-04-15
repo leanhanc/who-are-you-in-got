@@ -29,7 +29,7 @@ test("getResult returns correct result string", () => {
 		"5": 0,
 		"6": -1,
 	};
-	const expectedResult = "4162"; // Expected result based on the provided characterScore object
+	const expectedResult = "4162";
 
 	const result = getResult(characterScore);
 

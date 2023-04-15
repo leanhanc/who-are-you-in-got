@@ -30,7 +30,7 @@ export function validateResultCode(code: string) {
 
 	const hasValidCode =
 		values.length === 4 &&
-		values.every((value) => possibleValues.includes(value));
+		values.slice(0, -1).every((value) => possibleValues.includes(value));
 
 	return hasValidCode;
 }
