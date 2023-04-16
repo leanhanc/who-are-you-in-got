@@ -1,9 +1,18 @@
-import { PropsWithChildren } from "react";
+"use client";
+
 import NextLink from "next/link";
+import { usePathname } from "next/navigation";
 import classNames from "classnames";
+
+// Types
+import { PropsWithChildren } from "react";
+import { Locale } from "@/@types/i18n";
 
 // Styles
 import styles from "./Button.module.css";
+
+// Utils
+import getLocaleFromPath from "@/i18n/get-locale";
 
 interface ButtonProps extends PropsWithChildren {
 	variant: "shinny" | "outlined";
@@ -21,6 +30,11 @@ export default function Button({
 	animationDelay = 0,
 	margin,
 }: ButtonProps) {
+	// Locale
+	const pathName = usePathname();
+	const currentLocale: Locale = getLocaleFromPath(pathName);
+
+	// Styles
 	const dynamicStyles = {
 		animationDelay: `${animationDelay}s`,
 		opacity: animationDelay > 0 ? 0 : 1,
@@ -35,7 +49,7 @@ export default function Button({
 			<NextLink
 				className={classNames([styles.button, styles.shinny])}
 				style={dynamicStyles}
-				href={href}
+				href={`${currentLocale}${href}`}
 			>
 				{children}
 			</NextLink>

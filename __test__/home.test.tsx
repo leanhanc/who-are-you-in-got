@@ -34,6 +34,6 @@ describe("Home", () => {
 
 		const cta = screen.getByRole("link", { name: dictionary.header.ctaText });
 
-		expect(cta).toHaveAttribute("href", "/game");
+		expect(cta).toHaveAttribute("href", "en/game");
 	});
 });
