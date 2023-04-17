@@ -1,4 +1,8 @@
-import { characters, getCharactersFromResultCode } from "@/app/lib/characters";
+import {
+	characters,
+	getCharactersFromResultCode,
+	validateResultCode,
+} from "@/app/lib/characters";
 import { getResult } from "@/app/lib/result";
 
 test("getCharactersFromResultCode should return characters with correct names", () => {
@@ -34,6 +38,24 @@ test("getResult returns correct result string", () => {
 	const result = getResult(characterScore);
 
 	expect(result).toEqual(expectedResult);
+});
+
+test("validateResultCode handles a code with four valid characters correctly", () => {
+	const code = "1234";
+	const result = validateResultCode(code);
+	expect(result).toBe(true);
+});
+
+it("validateResultCode handles a code with only three characters correctly", () => {
+	const code = "123";
+	const result = validateResultCode(code);
+	expect(result).toBe(false);
+});
+
+it("validateResultCode handles a code with an invalid character correctly", () => {
+	const code = "1274";
+	const result = validateResultCode(code);
+	expect(result).toBe(false);
 });
 
 test("getResult handles equal character scores", () => {

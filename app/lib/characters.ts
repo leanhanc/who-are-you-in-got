@@ -24,13 +24,12 @@ export function getCharactersFromResultCode(
 	return characters as Partial<Characters>[];
 }
 
-export function validateResultCode(code: string) {
-	const possibleValues = ["0", "1", "2", "3", "4", "5", "6"];
+export function validateResultCode(code: string, amountOfCharacters = 6) {
 	const values = code.split("") as CharacterId[];
 
 	const hasValidCode =
 		values.length === 4 &&
-		values.slice(0, -1).every((value) => possibleValues.includes(value));
+		values.slice(0, -1).every((value) => Number(value) <= amountOfCharacters);
 
 	return hasValidCode;
 }
