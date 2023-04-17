@@ -49,7 +49,7 @@ export async function generateMetadata({
 		title: dictionary.head.title,
 		description: dictionary.head.description,
 		openGraph: {
-			images: "/images/open-graph.png",
+			images: "/images/meta/open-graph.png",
 		},
 	};
 }
