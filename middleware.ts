@@ -52,6 +52,6 @@ export function middleware(request: NextRequest) {
 export const config = {
 	// Pattern used to ignore paths
 	matcher: [
-		"/((?!api|_next/static|_next/image|public/images/meta/open-graph.png|favicon.ico|robots.txt).*)",
+		"/((?!api|_next/static|_next/image|public/*|favicon.ico|robots.txt).*)",
 	],
 };
