@@ -46,12 +46,13 @@ export async function generateMetadata({
 	const dictionary = await getDictionary(params.lang);
 
 	return {
+		metadataBase: new URL(process.env.BASE_URL || "http://localhost:3000"),
 		title: dictionary.head.title,
 		description: dictionary.head.description,
 		openGraph: {
 			title: dictionary.head.title,
 			description: dictionary.head.description,
-			images: [`${process.env.VERCEL_URL}/images/opengraph-image.png`],
+			images: ["/images/opengraph-image.png"],
 		},
 	};
 }
@@ -64,20 +65,15 @@ export default function Root({
 	params: { lang: string };
 }) {
 	return (
-		<>
-			<head>
-				<meta name="og:title" content="test" />
-			</head>
-			<html
-				lang={params.lang || "en"}
-				className={classNames([
-					cinzel.variable,
-					gotRegular.variable,
-					inconsolata.variable,
-				])}
-			>
-				<body>{children}</body>
-			</html>
-		</>
+		<html
+			lang={params.lang || "en"}
+			className={classNames([
+				cinzel.variable,
+				gotRegular.variable,
+				inconsolata.variable,
+			])}
+		>
+			<body>{children}</body>
+		</html>
 	);
 }
