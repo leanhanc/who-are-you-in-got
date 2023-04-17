@@ -29,7 +29,10 @@ export function validateResultCode(code: string, amountOfCharacters = 6) {
 
 	const hasValidCode =
 		values.length === 4 &&
-		values.slice(0, -1).every((value) => Number(value) <= amountOfCharacters);
+		values.slice(0, -1).every((value) => {
+			const numericValue = Number(value);
+			return numericValue <= amountOfCharacters && numericValue > 0;
+		});
 
 	return hasValidCode;
 }
