@@ -48,9 +48,6 @@ export async function generateMetadata({
 	return {
 		title: dictionary.head.title,
 		description: dictionary.head.description,
-		openGraph: {
-			images: "/images/meta/open-graph.png",
-		},
 	};
 }
 
