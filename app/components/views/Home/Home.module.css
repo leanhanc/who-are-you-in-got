@@ -15,10 +15,6 @@
 	margin-top: 3rem;
 }
 
-.home a:first-of-type {
-	color: var(--font-darker-color);
-}
-
 @keyframes fadeInWithZoom {
 	from {
 		transform: scale(0);

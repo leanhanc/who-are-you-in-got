@@ -80,3 +80,7 @@
 .outlined:active {
 	color: var(--primary-dark-color);
 }
+
+a.button {
+	color: var(--font-darker-color);
+}
