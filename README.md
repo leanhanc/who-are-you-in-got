@@ -1,23 +1,33 @@
-# Internationalized Routing
+# Who are you in Game of Thrones?
 
-Next.js doesn't support internationalized routing in `app` directory out of the box. But you can easily implement it yourself. This example shows how to implement internationalized routing on the Edge.
+Discover which character you would be in Game of Thrones by indicating your level of agreement with possible answers to four questions that reflect your personality and personal philosophy. Additionally, the result will also provide you with a second character who is similar to you, as well as the character you are least alike. You can then share the result on WhatsApp and Twitter.
 
-## Deploy your own
+## Online demo
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/app-dir-i18n-routing)
+You can take the test [here](who-are-you-in-got.vercel.app).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing&project-name=app-dir-i18n-routing&repository-name=app-dir-i18n-routing)
+## Develop
 
-## How to use
+[Node](https://nodejs.org/en/download/) is required to run the development server.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Clone the repo and run this commands:
 
-```bash
-npx create-next-app --example app-dir-i18n-routing i18n-app
-# or
-yarn create next-app --example app-dir-i18n-routing i18n-app
-# or
-pnpm create next-app --example app-dir-i18n-routing i18n-app
+```
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```
+npm run dev
+```
+
+The app will run at http://localhost:3000.
+
+## Tests
+
+```
+npm run test
+```
+
+## License
+
+MIT - [LICENSE.md](LICENSE.MD)
