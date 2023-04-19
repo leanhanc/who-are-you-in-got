@@ -30,4 +30,4 @@ npm run test
 
 ## License 📃
 
-MIT - [LICENSE.md](LICENSE.MD)
+MIT - [LICENSE.md](LICENSE.md)
