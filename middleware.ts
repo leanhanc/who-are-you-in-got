@@ -49,5 +49,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
 	// Pattern used to ignore paths
-	matcher: ["/((?!api|_next/static|_next/image|robots.txt).*)"],
+	matcher: [
+		"/((?!api|_next/static|_next/image|scripts|https://www.googletagmanager.com/gtag/js?id=G-RBQK6DQFEN|robots.txt).*)",
+	],
 };

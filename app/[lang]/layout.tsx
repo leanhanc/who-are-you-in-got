@@ -1,3 +1,4 @@
+import Script from "next/script";
 import localFont from "next/font/local";
 import classNames from "classnames";
 
@@ -74,6 +75,11 @@ export default function Root({
 			])}
 		>
 			<body>{children}</body>
+			<Script
+				src="https://www.googletagmanager.com/gtag/js?id=G-RBQK6DQFEN"
+				strategy="afterInteractive"
+			/>
+			<Script src="/scripts/ga.js" strategy="afterInteractive" />
 		</html>
 	);
 }
